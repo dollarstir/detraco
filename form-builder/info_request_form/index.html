@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name=robots content="noindex, nofollow">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<title>Form Builder</title>
+<link href=https://pelican.devtracoplus.com/site/assets/pwpc/pwpc-b5f1aac6f5b20c40f091d1c500cb2c053903acef.css
+    rel=stylesheet>
+<style>
+    html,
+    body {
+        background: transparent;
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        margin-top: 1px
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-width: 100px
+    }
+
+    #content {
+        margin: 0;
+        padding: 1px
+    }
+
+    @media only screen and (max-width:479px) {
+        .InputfieldFormWidths .Inputfield {
+            clear: both !important;
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-bottom: 1em !important
+        }
+
+        .Inputfield .InputfieldContent,
+        .Inputfield .InputfieldHeader {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            float: none !important;
+            width: 100%
+        }
+
+        .InputfieldFormWidths .Inputfield .InputfieldHeader {
+            margin-bottom: 0
+        }
+
+        .InputfieldFormNoWidths .Inputfield .InputfieldHeader {
+            text-align: initial
+        }
+    }
+</style>
+<script>var _pwfb = { config: { "debug": !1, "urls": { "root": "\/" } } }; if (typeof ProcessWire == 'undefined') { ProcessWire = _pwfb } else { for (var _pwfbkey in _pwfb.config) ProcessWire.config[_pwfbkey] = _pwfb.config[_pwfbkey] } if (typeof config == 'undefined') var config = ProcessWire.config; _pwfb = null</script>
+<script src=https://pelican.devtracoplus.com/wire/modules/Jquery/JqueryCore/dev/JqueryCore.js></script>
+<script src=https://pelican.devtracoplus.com/wire/templates-admin/scripts/inputfields.js></script>
+<script src=https://pelican.devtracoplus.com/site/modules/FormBuilder/form-builder.js></script>
+<div id=content class=content>
+    <div class=container>
+        <div class='FormBuilder FormBuilder-info_request_form'>
+            <form id=FormBuilder_info_request_form
+                class="FormBuilderFrameworkBasic FormBuilder InputfieldNoFocus InputfieldFormWidths InputfieldForm"
+                name=info_request_form method=post action=index.html data-colspacing=0>
+                <div class=Inputfields>
+                    <div class='Inputfield Inputfield_first_name InputfieldText InputfieldStateRequired'
+                        id=wrap_Inputfield_first_name><label class=InputfieldHeader for=Inputfield_first_name>First
+                            Name</label>
+                        <div class=InputfieldContent><input id=Inputfield_first_name class="required InputfieldMaxWidth"
+                                name=first_name maxlength=2048></div>
+                    </div>
+                    <div class='Inputfield Inputfield_last_name InputfieldText InputfieldStateRequired'
+                        id=wrap_Inputfield_last_name><label class=InputfieldHeader for=Inputfield_last_name>Last
+                            Name</label>
+                        <div class=InputfieldContent><input id=Inputfield_last_name class="required InputfieldMaxWidth"
+                                name=last_name maxlength=2048></div>
+                    </div>
+                    <div class='Inputfield Inputfield_email InputfieldEmail InputfieldStateRequired'
+                        id=wrap_Inputfield_email><label class=InputfieldHeader for=Inputfield_email>Email</label>
+                        <div class=InputfieldContent><input id=Inputfield_email name=email
+                                class="required InputfieldMaxWidth" type=email maxlength=512></div>
+                    </div>
+                    <div class='Inputfield Inputfield_telephone InputfieldText InputfieldStateRequired'
+                        id=wrap_Inputfield_telephone><label class=InputfieldHeader
+                            for=Inputfield_telephone>Telephone</label>
+                        <div class=InputfieldContent><input id=Inputfield_telephone class="required InputfieldMaxWidth"
+                                name=telephone maxlength=2048></div>
+                    </div>
+                    <div class='Inputfield Inputfield_property_type InputfieldSelect InputfieldStateRequired'
+                        id=wrap_Inputfield_property_type><label class=InputfieldHeader
+                            for=Inputfield_property_type>Property Type</label>
+                        <div class=InputfieldContent><select id=Inputfield_property_type class=required
+                                name=property_type>
+                                <option selected value=''>
+                                <option value='JUNIOR SUITE - 64.3SQM'>JUNIOR SUITE - 64.3SQM
+                                <option value='EXECUTIVE SUITE - 68.6 SQM'>EXECUTIVE SUITE - 68.6 SQM
+                                <option value='DIAMOND FRACTION - $46,000'>DIAMOND FRACTION - $46,000
+                                <option value='GOLD FRACTION - $44,000'>GOLD FRACTION - $44,000
+                                <option value='SILVER FRACTION - $42,000'>SILVER FRACTION - $42,000
+                            </select></div>
+                    </div>
+                    <div class='Inputfield Inputfield_message InputfieldTextarea' id=wrap_Inputfield_message><label
+                            class=InputfieldHeader for=Inputfield_message>Message</label>
+                        <div class=InputfieldContent><textarea id=Inputfield_message class=InputfieldMaxWidth
+                                name=message rows=3></textarea></div>
+                    </div>
+                    <div class='Inputfield Inputfield_company InputfieldText' id='wrap_Inputfield-'><label
+                            class='InputfieldHeader' for='Inputfield_company'>Company</label>
+                        <div class='InputfieldContent '><input id="Inputfield_company" class="InputfieldMaxWidth"
+                                name="company" type="text" maxlength="2048"></div>
+                    </div>
+                    <div class='Inputfield Inputfield_info_request_form_submit InputfieldSubmit'
+                        id='wrap_info_request_form_submit'>
+                        <div class='InputfieldContent '><button type='submit' name='info_request_form_submit'
+                                value='Submit'>Submit</button></div>
+                    </div>
+                </div> <input type=hidden name=_submitKey value=8:info_request_form:0>
+            </form>
+        </div>
+    </div>
+</div>
