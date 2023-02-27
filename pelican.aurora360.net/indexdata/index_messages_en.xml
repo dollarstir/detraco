@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[The Pelican by Devtraco]]></data>
+
+
+  <data name="en_panogroup75_title"><![CDATA[Reception(Day)]]></data>
+
+  <data name="en_pano74_title"><![CDATA[5]]></data>
+  <data name="en_pano78_title"><![CDATA[6]]></data>
+  <data name="en_pano80_title"><![CDATA[7]]></data>
+  <data name="en_pano90_title"><![CDATA[8]]></data>
+
+
+  <data name="en_pano72_title"><![CDATA[4]]></data>
+
+
+  <data name="en_pano113_title"><![CDATA[2]]></data>
+
+  <data name="en_panogroup125_title"><![CDATA[Standard Suite (Night)]]></data>
+
+  <data name="en_pano106_title"><![CDATA[13]]></data>
+  <data name="en_pano103_title"><![CDATA[10]]></data>
+  <data name="en_pano104_title"><![CDATA[11]]></data>
+  <data name="en_pano105_title"><![CDATA[12]]></data>
+  <data name="en_pano120_title"><![CDATA[9]]></data>
+  <data name="en_pano107_title"><![CDATA[14]]></data>
+  <data name="en_spotpoint204_tooltip"><![CDATA[Back To Bedroom]]></data>
+
+  <data name="en_panogroup141_title"><![CDATA[Standard Suite(Day)]]></data>
+
+  <data name="en_pano140_title"><![CDATA[19]]></data>
+  <data name="en_pano82_title"><![CDATA[10]]></data>
+  <data name="en_pano83_title"><![CDATA[11]]></data>
+  <data name="en_pano84_title"><![CDATA[12]]></data>
+  <data name="en_spotpoint5226_tooltip"><![CDATA[Enter Executive Suite]]></data>
+  <data name="en_spotpoint5227_tooltip"><![CDATA[Enter Standard Suite]]></data>
+  <data name="en_pano91_title"><![CDATA[9]]></data>
+  <data name="en_pano85_title"><![CDATA[13]]></data>
+  <data name="en_spotpoint363_tooltip"><![CDATA[Back to Bedroom]]></data>
+  <data name="en_pano4604_title"><![CDATA[7 copy]]></data>
+
+  <data name="en_panogroup96_title"><![CDATA[Executive Suite(Day)]]></data>
+
+  <data name="en_pano4617_title"><![CDATA[11 copy]]></data>
+  <data name="en_spotpoint5222_tooltip"><![CDATA[Go to Kitchen]]></data>
+  <data name="en_pano4623_title"><![CDATA[12]]></data>
+  <data name="en_pano4608_title"><![CDATA[8 copy]]></data>
+  <data name="en_pano86_title"><![CDATA[14]]></data>
+  <data name="en_spotpoint5221_tooltip"><![CDATA[Go to Bedroom]]></data>
+  <data name="en_pano87_title"><![CDATA[15]]></data>
+  <data name="en_pano88_title"><![CDATA[16]]></data>
+  <data name="en_spotpoint175_tooltip"><![CDATA[Back To Hall]]></data>
+  <data name="en_pano89_title"><![CDATA[17]]></data>
+  <data name="en_pano4610_title"><![CDATA[10 copy_1]]></data>
+  <data name="en_spotpoint5223_tooltip"><![CDATA[Enter Bathroom]]></data>
+  <data name="en_spotpoint5224_tooltip"><![CDATA[Enter Bedroom]]></data>
+
+  <data name="en_panogroup127_title"><![CDATA[Executive Suite((Night)]]></data>
+
+  <data name="en_pano112_title"><![CDATA[19]]></data>
+  <data name="en_spotpoint210_tooltip"><![CDATA[Go To Bathroom]]></data>
+  <data name="en_pano108_title"><![CDATA[15]]></data>
+  <data name="en_spotpoint5225_tooltip"><![CDATA[Enter Bedroom]]></data>
+  <data name="en_pano109_title"><![CDATA[16]]></data>
+  <data name="en_spotpoint207_tooltip"><![CDATA[Go To Bathroom]]></data>
+  <data name="en_pano110_title"><![CDATA[17]]></data>
+  <data name="en_spotpoint209_tooltip"><![CDATA[Back to Hall]]></data>
+
+  <data name="en_panogroup135_title"><![CDATA[Reception(Night)]]></data>
+
+  <data name="en_pano116_title"><![CDATA[5]]></data>
+  <data name="en_pano117_title"><![CDATA[6]]></data>
+  <data name="en_pano118_title"><![CDATA[7]]></data>
+  <data name="en_pano119_title"><![CDATA[8]]></data>
+  <data name="en_pano111_title"><![CDATA[18]]></data>
+
+  <data name="en_panogroup4821_title"><![CDATA[Waterpark View]]></data>
+
+  <data name="en_pano4598_title"><![CDATA[1 copy]]></data>
+  <data name="en_spotpolygon5637_tooltip"><![CDATA[View Waterpark]]></data>
+  <data name="en_spotpolygon5638_tooltip"><![CDATA[View Model]]></data>
+  <data name="en_pano4823_title"><![CDATA[1 copy]]></data>
+
+  <data name="en_panogroup4991_title"><![CDATA[Model View]]></data>
+
+  <data name="en_pano76_title"><![CDATA[18]]></data>
+  <data name="en_spotpolygon5632_tooltip"><![CDATA[View Model]]></data>
+  <data name="en_spotpolygon5636_tooltip"><![CDATA[View Waterpark]]></data>
+  <data name="en_pano4993_title"><![CDATA[18]]></data>
+
+
+  <data name="en_pano68_title"><![CDATA[3]]></data>
+
+
+  <data name="en_pano66_title"><![CDATA[1]]></data>
+
+
+  <data name="en_pano67_title"><![CDATA[2]]></data>
+
+
+  <data name="en_pano114_title"><![CDATA[3]]></data>
+
+
+  <data name="en_pano102_title"><![CDATA[1]]></data>
+
+
+  <data name="en_pano115_title"><![CDATA[4]]></data>
+
+
+
+
+
+
+  <data name="en_garrowsnavhotspots_style"><![CDATA[IconDefaultPointSpotStyle]]></data>
+  <data name="en_garrowsnavhotspots_style_vertical"><![CDATA[IconDefaultPointSpotStyle1]]></data>
+  <data name="en_garrowsfloatingarrow_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowsnavpoints_alpha"><![CDATA[0.2]]></data>
+  <data name="en_garrowsnavpoints_onhover_alpha"><![CDATA[0.6]]></data>
+  <data name="en_garrowschevrons_alpha"><![CDATA[1]]></data>
+  <data name="en_garrowschevronsborder_alpha"><![CDATA[1]]></data>
+  <data name="en_garrowschevrons_shadow_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowschevrons_shadow_border_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowsdisabled_panoids"><![CDATA[]]></data>
+  <data name="en_garrowsfloating_arrow_text"><![CDATA[Show/Hide floating arrow]]></data>
+  <data name="en_garrowschevron_arrows_text"><![CDATA[Show/Hide chevron arrows]]></data>
+  <data name="en_garrowsnavigation_hotspots_text"><![CDATA[Show/Hide navigation hotspots]]></data>
+  <data name="en_garrowsfloating_arrow_autohide_text"><![CDATA[Auto hide floating arrow]]></data>
+  <data name="en_garrowspassword"><![CDATA[garrows]]></data>
+  <data name="en_garrowskeep_view_replace_what"><![CDATA[MERGE]]></data>
+  <data name="en_garrowskeep_view_replace_with"><![CDATA[KEEPVIEW]]></data>
+  <data name="en_analyticsgoogle_tracking_id"><![CDATA[UA-xxxxxx-xx]]></data>
+  <data name="en_togglebuttonpanospecificfirsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecificsecondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano102]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano66]]></data>
+  <data name="en_togglebuttonpanospecific2firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific2secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano113]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano67]]></data>
+  <data name="en_togglebuttonpanospecific3firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific3secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano114]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano68]]></data>
+  <data name="en_togglebuttonpanospecific4firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific4secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano115]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano72]]></data>
+  <data name="en_togglebuttonpanospecific5firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific5secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano116]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano74]]></data>
+  <data name="en_togglebuttonpanospecific6firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific6secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano117]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano76]]></data>
+  <data name="en_togglebuttonpanospecific7firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific7secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano118]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano78]]></data>
+  <data name="en_togglebuttonpanospecific8firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific8secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano111]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano80]]></data>
+  <data name="en_togglebuttonpanospecific9firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific9secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano120]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano91]]></data>
+  <data name="en_togglebuttonpanospecific10firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific10secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano103]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano82]]></data>
+  <data name="en_togglebuttonpanospecific11firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific11secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano104]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano83]]></data>
+  <data name="en_togglebuttonpanospecific12firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific12secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano105]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano84]]></data>
+  <data name="en_togglebuttonpanospecific13firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific13secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano106]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano140]]></data>
+  <data name="en_togglebuttonpanospecific14firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific14secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano107]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano85]]></data>
+  <data name="en_togglebuttonpanospecific15firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific15secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano108]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano86]]></data>
+  <data name="en_togglebuttonpanospecific16firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific16secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano109]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano87]]></data>
+  <data name="en_togglebuttonpanospecific17firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific17secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano110]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano88]]></data>
+  <data name="en_togglebuttonpanospecific18firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific18secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano112]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano89]]></data>
+  <data name="en_togglebuttonpanospecific19firsttooltip"><![CDATA[Night]]></data>
+  <data name="en_togglebuttonpanospecific19secondtooltip"><![CDATA[Day]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1120"><![CDATA[pano119]]></data>
+  <data name="en_togglebuttonpanospecificpanoid1131"><![CDATA[pano90]]></data>
+  <data name="en_cool_hotspotcoolhotspotstyle_name"><![CDATA[bubble]]></data>
+  <data name="en_logowebsiteurl"><![CDATA[https://pelican.devtracoplus.com/]]></data>
+  <data name="en_logotooltipText"><![CDATA[Open website]]></data>
+  <data name="en_SansControlBarprevSceneTip"><![CDATA[Previous scene]]></data>
+  <data name="en_SansControlBarnextSceneTip"><![CDATA[Next scene]]></data>
+  <data name="en_SansControlBarzoomInTip"><![CDATA[Zoom in]]></data>
+  <data name="en_SansControlBarzoomOutTip"><![CDATA[Zoom out]]></data>
+  <data name="en_SansControlBarmoveLeftTip"><![CDATA[Move left]]></data>
+  <data name="en_SansControlBarmoveRightTip"><![CDATA[Move right]]></data>
+  <data name="en_SansControlBarmoveUpTip"><![CDATA[Move up]]></data>
+  <data name="en_SansControlBarmoveDownTip"><![CDATA[Move down]]></data>
+  <data name="en_SansControlBaropenFsTip"><![CDATA[Enter fullscreen]]></data>
+  <data name="en_SansControlBarcloseFsTip"><![CDATA[Exit fullscreen]]></data>
+  <data name="en_SansControlBarautorotateOnTip"><![CDATA[Start autorotation]]></data>
+  <data name="en_SansControlBarautorotateOffTip"><![CDATA[Stop autorotation]]></data>
+  <data name="en_SansControlBardisplayHelpTip"><![CDATA[Show help screen]]></data>
+  <data name="en_SansControlBarhideHelpTip"><![CDATA[Hide help screen]]></data>
+  <data name="en_SansControlBardisplayControlsTip"><![CDATA[Show controls]]></data>
+  <data name="en_SansControlBarhideControlsTip"><![CDATA[Hide controls]]></data>
+  <data name="en_SansControlBarctrlmodeDragTip"><![CDATA[Change control mode]]></data>
+  <data name="en_SansControlBarctrlmodeMoveTip"><![CDATA[Change control mode]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

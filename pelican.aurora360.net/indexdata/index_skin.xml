@@ -1,0 +1,4129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19-pr16">
+
+    
+  <!-- Spot Style - Default Point Spot Style -->
+
+
+  <style name="IconDefaultPointSpotStyle"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint01.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconDefaultPointSpotStyle"
+         onout="onoutIconDefaultPointSpotStyle"
+
+
+         />
+  <action name="onhoverIconDefaultPointSpotStyle">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDefaultPointSpotStyle">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Default Polygon Spot Style -->
+  <style name="PolygonDefaultPolygonSpotStyle"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x030303"
+           borderwidth="1"
+           borderalpha="1"
+           fillalpha="0.40000000000000002"
+           capture="false"
+           onhover="onhoverPolygonDefaultPolygonSpotStyle"
+           onover="onoverPolygonDefaultPolygonSpotStyle"
+           onout="onoutPolygonDefaultPolygonSpotStyle"
+           />
+  <action name="onhoverPolygonDefaultPolygonSpotStyle">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonDefaultPolygonSpotStyle">
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonDefaultPolygonSpotStyle">
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - bubble -->
+
+
+  <style name="Iconbubble"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onloaded="showPermanentTooltip(all);"
+
+
+         />
+
+
+
+  
+  <!-- Spot Style - Default Polygon Spot Style 1 -->
+  <style name="PolygonDefaultPolygonSpotStyle1"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x000000"
+           borderwidth="1"
+           borderalpha="1"
+           fillalpha="0.40000000000000002"
+           capture="false"
+           onhover="onhoverPolygonDefaultPolygonSpotStyle1"
+           onover="onoverPolygonDefaultPolygonSpotStyle1"
+           onout="onoutPolygonDefaultPolygonSpotStyle1"
+           />
+  <action name="onhoverPolygonDefaultPolygonSpotStyle1">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonDefaultPolygonSpotStyle1">
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonDefaultPolygonSpotStyle1">
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Loading transition -->
+<!-- id : blendmode -->
+<!-- ********** -->
+	<action name="blendmode_prepareblendmode" autorun="preinit">
+
+			set(ptblendmode, 'BLEND(1, easeInCubic)');
+
+	</action>
+
+
+
+  <events name="Bootstrap_External_Commandsevents" onnewpano="Bootstrap_External_Commandsonp" keep="true"/>
+  <action name="Bootstrap_External_Commandsonp">
+  	js(updatePanorama(get(xml.scene)););
+  </action>
+<garrows_settings
+	show_floatingarrow_d="true"
+	show_chevrons_d="true"
+	show_navpoints_d="false"
+	show_contextmenu_d="false"
+	show_originalhotspots_d="false"
+
+	show_floatingarrow_m="true"
+	show_chevrons_m="false"
+	show_navpoints_m="false"
+	show_contextmenu_m="false"
+	show_originalhotspots_m="false"
+
+	show_floatingarrow_vr="true"
+	show_chevrons_vr="false"
+	show_navpoints_vr="false"
+	show_contextmenu_vr="false"
+	show_originalhotspots_vr="false"
+
+	floatingarrow_position_d="mouse"
+	floatingarrow_position_m="fixed"
+	floatingarrow_position_vr="fixed"
+	
+	floatingarrow_atv="25"
+	floatingarrow_alpha="0.5"
+
+	navhotspots_style="IconDefaultPointSpotStyle"
+	navhotspots_style_vertical="IconDefaultPointSpotStyle1"
+
+	startup_delay="0"
+	show_tooltips="true"
+	ignore_showhidehotspots="false"
+	hotkey_f="true"
+	chevrons_capture="true"
+	chevrons_color="0xffffff"
+	chevrons_coloronhover="0xd7d7d7"
+	chevrons_borderwidth="1"
+	chevrons_zorder="50"
+	chevrons_bordercolor="0xffffff"
+	chevrons_bordercoloronhover="0xd7d7d7"
+	chevrons_style_m="chevronshape"
+	chevrons_style_d="chevronshape"
+	chevrons_alpha="1"
+	chevronsborder_alpha="1"
+	floatingarrow_zorder="50"
+
+	keep_view="true"
+	keep_view_replace_what="MERGE"
+	keep_view_replace_with="KEEPVIEW"
+
+	chevrons_position="25"
+	chevrons_scatter="0"
+	chevrons_distance="180"
+	floatingarrow_flyaway="true"
+	floatingarrow_autohide="true"
+	floatingarrow_sens="20"
+	floatingarrow_updatedelay="1"
+	floatingarrow_scale_d="10"
+	floatingarrow_scale_m="10"
+	navpoints_putonground="true"
+	navpoints_atv="25"
+	keyboard_control="false"
+
+	plugin_directory="%FIRSTXML%/graphics/garrows"
+	scenes_wobbling="false"
+	scenes_wobbling_size="5"
+	scenes_wobbling_time="500"
+	scenes_wobbling_updatedelay="100"
+	scenes_wobbling_stopondrag="false"
+	chevrons_shadow_color="0x000000"
+	chevrons_shadow_bordercolor="0x000000"
+	chevrons_shadow_alpha="0.5"
+	navpoints_alpha="0.2"
+	navpoints_onhover_alpha="0.6"
+	chevrons_shadow_borderwidth="1"
+	chevrons_shadow_border_alpha="0.5"
+	floating_arrow_text="Show/Hide floating arrow"
+	chevron_arrows_text="Show/Hide chevron arrows"
+	navigation_hotspots_text="Show/Hide navigation hotspots"
+	floating_arrow_autohide_text="Auto hide floating arrow"
+	hide_on_autorotate="true"
+	chevrons_updatedelay_desktop="1"
+	chevrons_updatedelay_mobile="0"
+	logkey_enable="false"
+	disabled_panoids=""
+	password_protect="false"
+	password="garrows"
+/>
+<include url="%FIRSTXML%/graphics/garrows/garrows.xml" />
+
+
+
+<!-- ********** -->
+<!-- Analytics -->
+<!-- id : analytics -->
+<!-- ********** -->
+
+<ptplugin name="analytics" engine="kolorAnalytics">
+	<settings>
+		<option name="source" value="google" type="string" />
+		<option name="tracking_id" value="UA-xxxxxx-xx" type="string" />
+		<option name="anonymizeIp" value="true" type="bool" />
+		<option name="force_ssl" value="false" type="bool" />
+		<option name="force_test" value="false" type="bool" />
+		<option name="start_page" value="index" type="string" />
+		<option name="start_title" value="The Pelican by Devtraco" type="string" />
+		<option name="start_lang" value="en" type="string" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+</ptplugin>
+
+<action name="kolorAnalyticsJsReady_analytics">
+	set(ptplugin[analytics].jsready, true);
+</action>
+
+<action name="activate_analytics">
+	if(ptplugin[analytics].jsready,
+		stopdelayedcall(delay_analytics_active);
+		js(invokePluginFunction(analytics, toggleDeactivation, false));
+	,
+		delayedcall(delay_analytics_active, 0.1, activate_analytics(););
+	);
+</action>
+
+<action name="deactivate_analytics">
+	if(ptplugin[analytics].jsready,
+		stopdelayedcall(delay_analytics_active);
+		js(invokePluginFunction(analytics, toggleDeactivation, true));
+	,
+		delayedcall(delay_analytics_active, 0.1, deactivate_analytics(););
+	);
+</action>
+
+<action name="sendPage_analytics">
+	if(ptplugin[analytics].jsready,
+		stopdelayedcall(delay_analytics_page);
+		js(invokePluginFunction(analytics, sendPageview, %1, %2));
+	,
+		delayedcall(delay_analytics_page,0.5,sendPage_analytics(%1,%2));
+	);
+</action>
+
+<!-- 
+sendEvent_analytics action :
+* param1 : category
+* param2 : action
+* param3 : label
+* param4 : number value
+-->
+<action name="sendEvent_analytics">
+	if(ptplugin[analytics].jsready,
+		stopdelayedcall(delay_analytics_event);
+		js(invokePluginFunction(analytics, sendEvent, %1, %2, %3, %4));
+	,
+		delayedcall(delay_analytics_event,0.5,sendEvent_analytics(%1,%2,%3,%4));
+	);
+</action>
+
+<action name="changeLanguage_analytics">
+	if(ptplugin[analytics].jsready,
+		stopdelayedcall(delay_analytics_lang);
+		js(invokePluginFunction(analytics, changeLanguage));
+	,
+		delayedcall(delay_analytics_lang,0.1,changeLanguage_analytics());
+	);
+</action>
+
+<events name="kolorAnalyticsEvents_analytics" 
+	keep="true"
+	onTourStart="sendEvent_analytics('panotour','tour start', 'The Pelican by Devtraco');"
+	onnewpano="sendPage_analytics(get(scene[get(xml.scene)].name), get(scene[get(xml.scene)].titleid));"
+	changetourlanguage="changeLanguage_analytics();"
+	/>
+
+<!-- ********** -->
+<!-- Force Landscape on Mobile -->
+<!-- id : ForceLandscapeMobilePlugin -->
+<!-- ********** -->
+
+	<events name="mobileorientation_events" devices="mobile" keep="true" onresize="mobileorientation_portrait_mode_check();"/>
+
+	<action name="mobileorientation_portrait_mode_check" device="mobile">
+		div(aspect, stagewidth, stageheight);
+		if(aspect != lastaspect OR '%1' == 'true',
+			copy(lastaspect, aspect);
+			if(stagewidth GT stageheight,
+				tween(layer[mobileorientation_rotate_device_required].alpha, 0.0, 0.0);
+			,
+				tween(layer[mobileorientation_rotate_device_required].alpha, 1.0);
+				delayedcall(3.0, tween(layer[mobileorientation_rotate_device_required].alpha, 0.0, 1.0););
+			);
+		);
+	</action>	
+
+	<layer name="mobileorientation_rotate_device_required" keep="true" devices="mobile" 
+		url="%FIRSTXML%/graphics/rotate_device.png" width="80%" height="prop"
+		align="center" edge="center"
+		autoalpha="true" alpha="0.0"
+		enabled="false"
+		/>	
+<!-- ********** -->
+<!-- Loading Information -->
+<!-- id : loaderinfo -->
+<!-- ********** -->
+
+  <events name="loaderinfoevent" onxmlcomplete="loaderinfoupdate();" keep="true"/>
+
+  <action name="loaderinfoupdate">
+    if(scene[get(xml.scene)].video,
+      set(layer[loaderinfotextfield].visible, false);
+    ,
+      if (progress.progress == 1,
+        delayedcall(0.5, set(layer[loaderinfotextfield].visible, false); );
+      ,
+        set(layer[loaderinfotextfield].visible, true);
+      );
+      mul(progresstext, get(progress.progress),100);
+      roundval(progresstext);
+      txtadd(progresstext, get(progresstext), %);
+      set(layer[loaderinfotextfield].html, get(progresstext));
+      ifnot(progress.progress GE 1, delayedcall(0.01, loaderinfoupdate() ));
+    );
+  </action>
+
+  <layer name="loaderinfotextfield"
+         keep="true"
+         zorder="6"
+         type="text"
+         align="center"
+         x="0"
+         y="0"
+         bgborder="0"
+         bg="false"
+         capture="false"
+         handcursor="false"
+         interactivecontent="false"
+         alpha="1"
+         visible="true"
+         css="
+         text-align:center;
+         color:#ffffff;
+         font-family:Arial;
+         font-weight:bold;
+         font-size:16px;
+         "
+  />
+
+<!-- ********* -->
+<!-- Gyroscope -->
+<!-- ********* -->
+
+
+<plugin name="gyroscope"
+        url="%FIRSTXML%/graphics/gyro2.js"
+        keep="true"
+        devices="no-desktop.and.html5"
+
+        onunavailable="checkGyroUnavailable();"
+        sensor_mode="1"
+        friction="auto"
+        autocalibration="true"
+        touch_mode="full"
+        onavailable="delayedcall(1, checkGyroAvailability(););"
+        enabled="false"
+        activated="false"
+        />
+
+<events name="gyroscopeEvents" onnewpano="planarGyroscopeTest();" keep="true" />
+
+<action name="planarGyroscopeTest">
+  if(plugin[gyroscope],
+    if(scene[get(xml.scene)].full360,
+      set(sceneisfull360, false);
+      sub(viewhfov, panoview.hmax, panoview.hmin);
+      if (viewhfov == 360,
+        sub(viewvfov, panoview.vmax, panoview.vmin);
+        if (viewvfov == 180,
+          set(sceneisfull360, true);
+        );
+      );
+      if (sceneisfull360,
+        set(plugin[gyroscope].camroll, true);
+      ,
+        set(plugin[gyroscope].camroll, false);
+      );
+    ,
+      set(plugin[gyroscope].camroll, false);
+    );
+  );
+</action>
+
+<action name="changeGyroscopeState">
+  if(plugin[gyroscope],
+    if (plugin[gyroscope].isavailable,
+      if(%1,
+        set(plugin[gyroscope].activated,true);
+      ,
+        set(plugin[gyroscope].activated,false);
+      );
+      if (%1 != plugin[gyroscope].enabled,
+        if(plugin[gyroscope].activated,
+          switch(plugin[gyroscope].enabled);
+        ,
+          set(plugin[gyroscope].enabled, false);
+        );
+        if (plugin[gyroscope].enabled, events.dispatch(ongyroscopeon);, events.dispatch(ongyroscopeoff););
+      );
+    );
+  );
+</action>
+
+<action name="checkGyroAvailability">
+  if(plugin[gyroscope],
+    if (plugin[gyroscope].isavailable,
+      
+      set(sceneisfull360, false);
+      if (scene[get(xml.scene)].full360,
+        sub(viewhfov, panoview.hmax, panoview.hmin);
+        if (viewhfov == 360,
+          sub(viewvfov, panoview.vmax, panoview.vmin);
+          if (viewvfov == 180,
+            set(sceneisfull360, true);
+          );
+        );
+      );
+      set(delaythegyrocheck, false);
+      if (sceneisfull360 AND tour_firstlittleplanet, set(delaythegyrocheck, true));
+
+      ifnot(delaythegyrocheck,
+        switch(plugin[gyroscope].enabled);
+        set(plugin[gyroscope].activated,true);
+        set(tour_gyroscopedevices, true);
+        events.dispatch(ongyroscopeavailable);
+      ,
+        delayedcall(1, checkGyroAvailability(););
+      );
+    ,
+      set(tour_gyroscopedevices, false);
+    );
+    if (plugin[gyroscope].enabled, events.dispatch(ongyroscopeon);, events.dispatch(ongyroscopeoff););
+  ,
+    checkGyroUnavailable();
+  );
+</action>
+
+<action name="checkGyroUnavailable">
+  set(plugin[gyroscope].activated, false);
+  set(plugin[gyroscope].enabled, false);
+  set(tour_gyroscopedevices, false);
+  events.dispatch(ongyroscopeunavailable);
+</action>
+
+<!-- ********** -->
+<!-- 1 -->
+<!-- id : togglebuttonpanospecific -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="8"
+         tooltip=""
+         onhover="togglebuttonpanospecificOnHover"
+         state="true"
+         onclick="togglebuttonpanospecificOnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecificOnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecificfirsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecificsecondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecificOnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano102);lookat(41.400000, -7.875000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano66);lookat(-22.319200, -3.135780, 81.817900);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecificevents" 
+    onTourStart="showtogglebuttonpanospecific();"
+    hidetourcontrols="hidetogglebuttonpanospecific();" 
+    showtourcontrols="showtogglebuttonpanospecific();" 
+    onPanoStart="showtogglebuttonpanospecific();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific">set(layer[togglebuttonpanospecific].visible, false);</action>
+  <action name="showtogglebuttonpanospecific">
+    set(displaytheplugin_togglebuttonpanospecific, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano102, set(displaytheplugin_togglebuttonpanospecific, true); );
+    if (xml.scene == pano66, set(displaytheplugin_togglebuttonpanospecific, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific,
+      set(layer[togglebuttonpanospecific].visible, true);
+    ,
+      hidetogglebuttonpanospecific();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 2 -->
+<!-- id : togglebuttonpanospecific2 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific2"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific2/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="9"
+         tooltip=""
+         onhover="togglebuttonpanospecific2OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific2OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific2OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific2firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific2secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific2OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano113);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific2/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano67);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific2/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific2events" 
+    onTourStart="showtogglebuttonpanospecific2();"
+    hidetourcontrols="hidetogglebuttonpanospecific2();" 
+    showtourcontrols="showtogglebuttonpanospecific2();" 
+    onPanoStart="showtogglebuttonpanospecific2();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific2">set(layer[togglebuttonpanospecific2].visible, false);</action>
+  <action name="showtogglebuttonpanospecific2">
+    set(displaytheplugin_togglebuttonpanospecific2, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano113, set(displaytheplugin_togglebuttonpanospecific2, true); );
+    if (xml.scene == pano67, set(displaytheplugin_togglebuttonpanospecific2, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific2,
+      set(layer[togglebuttonpanospecific2].visible, true);
+    ,
+      hidetogglebuttonpanospecific2();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 3 -->
+<!-- id : togglebuttonpanospecific3 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific3"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific3/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="10"
+         tooltip=""
+         onhover="togglebuttonpanospecific3OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific3OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific3OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific3firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific3secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific3OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano114);lookat(1.800000, -9.450000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific3/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano68);lookat(25.650000, -4.500000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific3/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific3events" 
+    onTourStart="showtogglebuttonpanospecific3();"
+    hidetourcontrols="hidetogglebuttonpanospecific3();" 
+    showtourcontrols="showtogglebuttonpanospecific3();" 
+    onPanoStart="showtogglebuttonpanospecific3();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific3">set(layer[togglebuttonpanospecific3].visible, false);</action>
+  <action name="showtogglebuttonpanospecific3">
+    set(displaytheplugin_togglebuttonpanospecific3, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano114, set(displaytheplugin_togglebuttonpanospecific3, true); );
+    if (xml.scene == pano68, set(displaytheplugin_togglebuttonpanospecific3, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific3,
+      set(layer[togglebuttonpanospecific3].visible, true);
+    ,
+      hidetogglebuttonpanospecific3();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 4 -->
+<!-- id : togglebuttonpanospecific4 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific4"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific4/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="11"
+         tooltip=""
+         onhover="togglebuttonpanospecific4OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific4OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific4OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific4firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific4secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific4OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano115);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific4/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano72);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific4/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific4events" 
+    onTourStart="showtogglebuttonpanospecific4();"
+    hidetourcontrols="hidetogglebuttonpanospecific4();" 
+    showtourcontrols="showtogglebuttonpanospecific4();" 
+    onPanoStart="showtogglebuttonpanospecific4();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific4">set(layer[togglebuttonpanospecific4].visible, false);</action>
+  <action name="showtogglebuttonpanospecific4">
+    set(displaytheplugin_togglebuttonpanospecific4, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano115, set(displaytheplugin_togglebuttonpanospecific4, true); );
+    if (xml.scene == pano72, set(displaytheplugin_togglebuttonpanospecific4, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific4,
+      set(layer[togglebuttonpanospecific4].visible, true);
+    ,
+      hidetogglebuttonpanospecific4();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 5 -->
+<!-- id : togglebuttonpanospecific5 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific5"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific5/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="12"
+         tooltip=""
+         onhover="togglebuttonpanospecific5OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific5OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific5OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific5firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific5secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific5OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano116);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific5/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano74);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific5/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific5events" 
+    onTourStart="showtogglebuttonpanospecific5();"
+    hidetourcontrols="hidetogglebuttonpanospecific5();" 
+    showtourcontrols="showtogglebuttonpanospecific5();" 
+    onPanoStart="showtogglebuttonpanospecific5();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific5">set(layer[togglebuttonpanospecific5].visible, false);</action>
+  <action name="showtogglebuttonpanospecific5">
+    set(displaytheplugin_togglebuttonpanospecific5, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano116, set(displaytheplugin_togglebuttonpanospecific5, true); );
+    if (xml.scene == pano74, set(displaytheplugin_togglebuttonpanospecific5, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific5,
+      set(layer[togglebuttonpanospecific5].visible, true);
+    ,
+      hidetogglebuttonpanospecific5();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 6 -->
+<!-- id : togglebuttonpanospecific6 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific6"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific6/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="13"
+         tooltip=""
+         onhover="togglebuttonpanospecific6OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific6OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific6OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific6firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific6secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific6OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano117);lookat(11.250000, 0.450000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific6/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano76);lookat(11.475000, 8.325000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific6/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific6events" 
+    onTourStart="showtogglebuttonpanospecific6();"
+    hidetourcontrols="hidetogglebuttonpanospecific6();" 
+    showtourcontrols="showtogglebuttonpanospecific6();" 
+    onPanoStart="showtogglebuttonpanospecific6();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific6">set(layer[togglebuttonpanospecific6].visible, false);</action>
+  <action name="showtogglebuttonpanospecific6">
+    set(displaytheplugin_togglebuttonpanospecific6, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano117, set(displaytheplugin_togglebuttonpanospecific6, true); );
+    if (xml.scene == pano76, set(displaytheplugin_togglebuttonpanospecific6, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific6,
+      set(layer[togglebuttonpanospecific6].visible, true);
+    ,
+      hidetogglebuttonpanospecific6();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 7 -->
+<!-- id : togglebuttonpanospecific7 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific7"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific7/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="14"
+         tooltip=""
+         onhover="togglebuttonpanospecific7OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific7OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific7OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific7firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific7secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific7OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano118);lookat(43.875000, 6.525000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific7/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano78);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific7/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific7events" 
+    onTourStart="showtogglebuttonpanospecific7();"
+    hidetourcontrols="hidetogglebuttonpanospecific7();" 
+    showtourcontrols="showtogglebuttonpanospecific7();" 
+    onPanoStart="showtogglebuttonpanospecific7();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific7">set(layer[togglebuttonpanospecific7].visible, false);</action>
+  <action name="showtogglebuttonpanospecific7">
+    set(displaytheplugin_togglebuttonpanospecific7, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano118, set(displaytheplugin_togglebuttonpanospecific7, true); );
+    if (xml.scene == pano78, set(displaytheplugin_togglebuttonpanospecific7, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific7,
+      set(layer[togglebuttonpanospecific7].visible, true);
+    ,
+      hidetogglebuttonpanospecific7();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 8 -->
+<!-- id : togglebuttonpanospecific8 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific8"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific8/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="15"
+         tooltip=""
+         onhover="togglebuttonpanospecific8OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific8OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific8OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific8firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific8secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific8OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano111);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific8/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano80);lookat(-95.850000, 1.125000, 99.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific8/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific8events" 
+    onTourStart="showtogglebuttonpanospecific8();"
+    hidetourcontrols="hidetogglebuttonpanospecific8();" 
+    showtourcontrols="showtogglebuttonpanospecific8();" 
+    onPanoStart="showtogglebuttonpanospecific8();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific8">set(layer[togglebuttonpanospecific8].visible, false);</action>
+  <action name="showtogglebuttonpanospecific8">
+    set(displaytheplugin_togglebuttonpanospecific8, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano111, set(displaytheplugin_togglebuttonpanospecific8, true); );
+    if (xml.scene == pano80, set(displaytheplugin_togglebuttonpanospecific8, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific8,
+      set(layer[togglebuttonpanospecific8].visible, true);
+    ,
+      hidetogglebuttonpanospecific8();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 9 -->
+<!-- id : togglebuttonpanospecific9 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific9"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific9/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="16"
+         tooltip=""
+         onhover="togglebuttonpanospecific9OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific9OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific9OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific9firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific9secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific9OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano120);lookat(72.450000, 5.625000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific9/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano91);lookat(-14.175000, 3.825000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific9/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific9events" 
+    onTourStart="showtogglebuttonpanospecific9();"
+    hidetourcontrols="hidetogglebuttonpanospecific9();" 
+    showtourcontrols="showtogglebuttonpanospecific9();" 
+    onPanoStart="showtogglebuttonpanospecific9();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific9">set(layer[togglebuttonpanospecific9].visible, false);</action>
+  <action name="showtogglebuttonpanospecific9">
+    set(displaytheplugin_togglebuttonpanospecific9, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano120, set(displaytheplugin_togglebuttonpanospecific9, true); );
+    if (xml.scene == pano91, set(displaytheplugin_togglebuttonpanospecific9, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific9,
+      set(layer[togglebuttonpanospecific9].visible, true);
+    ,
+      hidetogglebuttonpanospecific9();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 10 -->
+<!-- id : togglebuttonpanospecific10 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific10"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific10/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="17"
+         tooltip=""
+         onhover="togglebuttonpanospecific10OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific10OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific10OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific10firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific10secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific10OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano103);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific10/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano82);lookat(155.250000, 4.500000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific10/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific10events" 
+    onTourStart="showtogglebuttonpanospecific10();"
+    hidetourcontrols="hidetogglebuttonpanospecific10();" 
+    showtourcontrols="showtogglebuttonpanospecific10();" 
+    onPanoStart="showtogglebuttonpanospecific10();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific10">set(layer[togglebuttonpanospecific10].visible, false);</action>
+  <action name="showtogglebuttonpanospecific10">
+    set(displaytheplugin_togglebuttonpanospecific10, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano103, set(displaytheplugin_togglebuttonpanospecific10, true); );
+    if (xml.scene == pano82, set(displaytheplugin_togglebuttonpanospecific10, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific10,
+      set(layer[togglebuttonpanospecific10].visible, true);
+    ,
+      hidetogglebuttonpanospecific10();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 11 -->
+<!-- id : togglebuttonpanospecific11 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific11"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific11/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="18"
+         tooltip=""
+         onhover="togglebuttonpanospecific11OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific11OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific11OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific11firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific11secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific11OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano104);lookat(91.800000, 2.025000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific11/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano83);lookat(1.800000, 0.000000, 81.818200);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific11/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific11events" 
+    onTourStart="showtogglebuttonpanospecific11();"
+    hidetourcontrols="hidetogglebuttonpanospecific11();" 
+    showtourcontrols="showtogglebuttonpanospecific11();" 
+    onPanoStart="showtogglebuttonpanospecific11();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific11">set(layer[togglebuttonpanospecific11].visible, false);</action>
+  <action name="showtogglebuttonpanospecific11">
+    set(displaytheplugin_togglebuttonpanospecific11, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano104, set(displaytheplugin_togglebuttonpanospecific11, true); );
+    if (xml.scene == pano83, set(displaytheplugin_togglebuttonpanospecific11, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific11,
+      set(layer[togglebuttonpanospecific11].visible, true);
+    ,
+      hidetogglebuttonpanospecific11();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 12 -->
+<!-- id : togglebuttonpanospecific12 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific12"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific12/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="19"
+         tooltip=""
+         onhover="togglebuttonpanospecific12OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific12OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific12OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific12firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific12secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific12OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano105);lookat(-47.700000, 1.575000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific12/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano84);lookat(42.525000, 2.025000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific12/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific12events" 
+    onTourStart="showtogglebuttonpanospecific12();"
+    hidetourcontrols="hidetogglebuttonpanospecific12();" 
+    showtourcontrols="showtogglebuttonpanospecific12();" 
+    onPanoStart="showtogglebuttonpanospecific12();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific12">set(layer[togglebuttonpanospecific12].visible, false);</action>
+  <action name="showtogglebuttonpanospecific12">
+    set(displaytheplugin_togglebuttonpanospecific12, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano105, set(displaytheplugin_togglebuttonpanospecific12, true); );
+    if (xml.scene == pano84, set(displaytheplugin_togglebuttonpanospecific12, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific12,
+      set(layer[togglebuttonpanospecific12].visible, true);
+    ,
+      hidetogglebuttonpanospecific12();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 13 -->
+<!-- id : togglebuttonpanospecific13 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific13"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific13/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="20"
+         tooltip=""
+         onhover="togglebuttonpanospecific13OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific13OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific13OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific13firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific13secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific13OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano106);lookat(123.975000, -3.375000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific13/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano140);lookat(24.525000, 11.700000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific13/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific13events" 
+    onTourStart="showtogglebuttonpanospecific13();"
+    hidetourcontrols="hidetogglebuttonpanospecific13();" 
+    showtourcontrols="showtogglebuttonpanospecific13();" 
+    onPanoStart="showtogglebuttonpanospecific13();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific13">set(layer[togglebuttonpanospecific13].visible, false);</action>
+  <action name="showtogglebuttonpanospecific13">
+    set(displaytheplugin_togglebuttonpanospecific13, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano106, set(displaytheplugin_togglebuttonpanospecific13, true); );
+    if (xml.scene == pano140, set(displaytheplugin_togglebuttonpanospecific13, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific13,
+      set(layer[togglebuttonpanospecific13].visible, true);
+    ,
+      hidetogglebuttonpanospecific13();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 14 -->
+<!-- id : togglebuttonpanospecific14 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific14"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific14/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="21"
+         tooltip=""
+         onhover="togglebuttonpanospecific14OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific14OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific14OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific14firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific14secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific14OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano107);lookat(-6.975000, -1.350000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific14/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano85);lookat(171.675000, 8.775000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific14/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific14events" 
+    onTourStart="showtogglebuttonpanospecific14();"
+    hidetourcontrols="hidetogglebuttonpanospecific14();" 
+    showtourcontrols="showtogglebuttonpanospecific14();" 
+    onPanoStart="showtogglebuttonpanospecific14();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific14">set(layer[togglebuttonpanospecific14].visible, false);</action>
+  <action name="showtogglebuttonpanospecific14">
+    set(displaytheplugin_togglebuttonpanospecific14, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano107, set(displaytheplugin_togglebuttonpanospecific14, true); );
+    if (xml.scene == pano85, set(displaytheplugin_togglebuttonpanospecific14, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific14,
+      set(layer[togglebuttonpanospecific14].visible, true);
+    ,
+      hidetogglebuttonpanospecific14();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 15 -->
+<!-- id : togglebuttonpanospecific15 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific15"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific15/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="22"
+         tooltip=""
+         onhover="togglebuttonpanospecific15OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific15OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific15OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific15firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific15secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific15OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano108);lookat(-12.825000, 0.225000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific15/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano86);lookat(-8.775000, 0.675000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific15/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific15events" 
+    onTourStart="showtogglebuttonpanospecific15();"
+    hidetourcontrols="hidetogglebuttonpanospecific15();" 
+    showtourcontrols="showtogglebuttonpanospecific15();" 
+    onPanoStart="showtogglebuttonpanospecific15();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific15">set(layer[togglebuttonpanospecific15].visible, false);</action>
+  <action name="showtogglebuttonpanospecific15">
+    set(displaytheplugin_togglebuttonpanospecific15, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano108, set(displaytheplugin_togglebuttonpanospecific15, true); );
+    if (xml.scene == pano86, set(displaytheplugin_togglebuttonpanospecific15, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific15,
+      set(layer[togglebuttonpanospecific15].visible, true);
+    ,
+      hidetogglebuttonpanospecific15();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 16 -->
+<!-- id : togglebuttonpanospecific16 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific16"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific16/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="23"
+         tooltip=""
+         onhover="togglebuttonpanospecific16OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific16OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific16OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific16firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific16secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific16OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano109);lookat(-52.222500, 5.445000, 99.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific16/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano87);lookat(0.000000, 0.000000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific16/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific16events" 
+    onTourStart="showtogglebuttonpanospecific16();"
+    hidetourcontrols="hidetogglebuttonpanospecific16();" 
+    showtourcontrols="showtogglebuttonpanospecific16();" 
+    onPanoStart="showtogglebuttonpanospecific16();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific16">set(layer[togglebuttonpanospecific16].visible, false);</action>
+  <action name="showtogglebuttonpanospecific16">
+    set(displaytheplugin_togglebuttonpanospecific16, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano109, set(displaytheplugin_togglebuttonpanospecific16, true); );
+    if (xml.scene == pano87, set(displaytheplugin_togglebuttonpanospecific16, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific16,
+      set(layer[togglebuttonpanospecific16].visible, true);
+    ,
+      hidetogglebuttonpanospecific16();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 17 -->
+<!-- id : togglebuttonpanospecific17 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific17"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific17/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="24"
+         tooltip=""
+         onhover="togglebuttonpanospecific17OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific17OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific17OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific17firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific17secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific17OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano110);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific17/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano88);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific17/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific17events" 
+    onTourStart="showtogglebuttonpanospecific17();"
+    hidetourcontrols="hidetogglebuttonpanospecific17();" 
+    showtourcontrols="showtogglebuttonpanospecific17();" 
+    onPanoStart="showtogglebuttonpanospecific17();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific17">set(layer[togglebuttonpanospecific17].visible, false);</action>
+  <action name="showtogglebuttonpanospecific17">
+    set(displaytheplugin_togglebuttonpanospecific17, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano110, set(displaytheplugin_togglebuttonpanospecific17, true); );
+    if (xml.scene == pano88, set(displaytheplugin_togglebuttonpanospecific17, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific17,
+      set(layer[togglebuttonpanospecific17].visible, true);
+    ,
+      hidetogglebuttonpanospecific17();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 18 -->
+<!-- id : togglebuttonpanospecific18 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific18"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific18/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="25"
+         tooltip=""
+         onhover="togglebuttonpanospecific18OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific18OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific18OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific18firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific18secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific18OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano112);lookat(-176.400000, 8.325000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific18/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano89);lookat(23.625000, 2.475000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific18/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific18events" 
+    onTourStart="showtogglebuttonpanospecific18();"
+    hidetourcontrols="hidetogglebuttonpanospecific18();" 
+    showtourcontrols="showtogglebuttonpanospecific18();" 
+    onPanoStart="showtogglebuttonpanospecific18();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific18">set(layer[togglebuttonpanospecific18].visible, false);</action>
+  <action name="showtogglebuttonpanospecific18">
+    set(displaytheplugin_togglebuttonpanospecific18, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano112, set(displaytheplugin_togglebuttonpanospecific18, true); );
+    if (xml.scene == pano89, set(displaytheplugin_togglebuttonpanospecific18, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific18,
+      set(layer[togglebuttonpanospecific18].visible, true);
+    ,
+      hidetogglebuttonpanospecific18();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- 19 -->
+<!-- id : togglebuttonpanospecific19 -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebuttonpanospecific19"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebuttonpanoramaspecific19/moon.png" 
+         align="topright"
+         x="10"
+         y="10"
+         zorder="26"
+         tooltip=""
+         onhover="togglebuttonpanospecific19OnHover"
+         state="true"
+         onclick="togglebuttonpanospecific19OnClick"
+		 used_for_hotspots="false"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonpanospecific19OnHover">
+    if (state,
+      set(tooltip, togglebuttonpanospecific19firsttooltip);
+     ,
+      set(tooltip, togglebuttonpanospecific19secondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonpanospecific19OnClick">
+    if (state,
+      set(state, false);
+          mainloadscene(pano119);lookat(-11.925000, 1.125000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific19/sun.png);
+     ,
+      set(state, true);
+          mainloadscene(pano90);lookat(4.275000, -0.225000, 90.000000);
+
+
+      set(url,%FIRSTXML%/graphics/togglebuttonpanoramaspecific19/moon.png);
+    );
+  </action>
+
+  <events name="togglebuttonpanospecific19events" 
+    onTourStart="showtogglebuttonpanospecific19();"
+    hidetourcontrols="hidetogglebuttonpanospecific19();" 
+    showtourcontrols="showtogglebuttonpanospecific19();" 
+    onPanoStart="showtogglebuttonpanospecific19();" 
+    keep="true" />
+  <action name="hidetogglebuttonpanospecific19">set(layer[togglebuttonpanospecific19].visible, false);</action>
+  <action name="showtogglebuttonpanospecific19">
+    set(displaytheplugin_togglebuttonpanospecific19, false);
+    if (tour_displaycontrols,
+    if (xml.scene == pano119, set(displaytheplugin_togglebuttonpanospecific19, true); );
+    if (xml.scene == pano90, set(displaytheplugin_togglebuttonpanospecific19, true); );
+    );
+    if (displaytheplugin_togglebuttonpanospecific19,
+      set(layer[togglebuttonpanospecific19].visible, true);
+    ,
+      hidetogglebuttonpanospecific19();
+    );
+  </action>
+
+
+<!-- ********** -->
+<!-- Classic Thumbnails Bar -->
+<!-- id : thumbnailsBar-theme02 -->
+<!-- ********** -->
+
+
+
+
+
+
+<layer name="thumbnailsBar_thumbnailsBar_theme02" 
+	keep="true" 
+	type="image" 
+	visible="false"
+	align="bottom" 
+	
+		width="100%" 
+		height="0" 
+		accuracy="1"
+	
+	x="0"
+	y="0"
+	
+	url="%FIRSTXML%/graphics/classicthumbnailsbar/frame_bg.png" 
+	scale9grid="10|10|80|80"
+	
+	zorder="27"
+/>
+
+
+<layer name="thumbnailBorderSource_thumbnailsBar_theme02"
+	keep="true"
+	visible="false"
+	onloaded="loadedImages_thumbnailsBar_theme02(border);"
+	url="%FIRSTXML%/graphics/classicthumbnailsbar/thumbnails_states.png" 
+	offsetX="10"
+	offsetY="10"
+	quarterHeight="0"
+/>
+
+  <layer name="tooltipStyle_thumbnailsBar_theme02"
+	       keep="true"
+	       enabled="false"
+         capture="false"
+	       type="text"
+         align="center"
+         bg="false"
+         bgborder="0"
+         txtshadow="1.0 1.0 4.0 0x000000 1"
+         css="color:#e6e6e6;font-family:Garamond;font-weight:bold;font-size:12px;text-align:left;"
+         interactivecontent="false"
+         zorder="0"
+         padding="2"
+         xoffset="0"
+         yoffset="0"
+         visible="false"
+         html=""
+         edge="bottom"
+         />
+
+	
+	<krpano arrow1Loaded_thumbnailsBar_theme02="false" arrow2Loaded_thumbnailsBar_theme02="false" borderLoaded_thumbnailsBar_theme02="false" thumbnailsLoadedCounter_thumbnailsBar_theme02="0" thumbsCount_thumbnailsBar_theme02="0" thumbsCounter_thumbnailsBar_theme02="0" firstInit_thumbnailsBar_theme02="false" />
+	
+	
+	<events name="thumbnailsScrollEvents_thumbnailsBar_theme02" 
+		keep="true" 
+		
+		onxmlcomplete="ifnot(startResize_thumbnailsBar_theme02,set(isLoaded_thumbnailsBar_theme02, true);if(isStarted_thumbnailsBar_theme02,onLoadCompleteHandler_thumbnailsBar_theme02();););"
+		onTourStart="set(isStarted_thumbnailsBar_theme02, true);if(isLoaded_thumbnailsBar_theme02,onLoadCompleteHandler_thumbnailsBar_theme02(););"
+		onnewpano="if(startResize_thumbnailsBar_theme02,if(firstInit_thumbnailsBar_theme02,onLoadCompleteHandler_thumbnailsBar_theme02();););"
+		onresize="onResizeHandler_thumbnailsBar_theme02();"
+		hidetourthumbnails="hideWithThumbnailsButton_thumbnailsBar_theme02();" 
+		showtourthumbnails="showWithThumbnailsButton_thumbnailsBar_theme02();" 
+		hidetourcontrols="hideWithControlsBar_thumbnailsBar_theme02();" 
+		showtourcontrols="showWithControlsBar_thumbnailsBar_theme02();" 
+		onenterfullscreen="delayedcall(0.2,scrollToCurrentThumb_thumbnailsBar_theme02(););"
+		onexitfullscreen="delayedcall(0.2,scrollToCurrentThumb_thumbnailsBar_theme02(););"
+    changetourlanguage="updateTitles_thumbnailsBar_theme02();"	
+	/>
+	
+	
+	<layer name="scrollAreaContainer_thumbnailsBar_theme02" 
+         keep="true"
+         type="container" 
+         align="topleft" x="5" y="5"
+         marginX="5"
+         marginY="5"
+         width="0" height="0"
+         targetWidth="0"
+         targetHeight="0"
+         scrollSpeedInit="10"
+         scrollSpeed="10"
+         scrollSpeedMax="70"
+         scrollSpeedAcceleration="20"
+         parent="thumbnailsBar_thumbnailsBar_theme02"
+         thumbWidth="0"
+         thumbHeight="0"
+         itemWidth="100"
+         itemHeight="50"
+         offsetX="0" offsetY="0"
+         thumbSpacer="0"
+         currentThumbsCount="0"
+         adjustToContent="false"
+         zorder="1"
+         visible="false"
+         ready="false">
+	
+		
+    <layer name="thumbsScrollArea_thumbnailsBar_theme02"
+           url.flash="%FIRSTXML%/graphics/scrollarea.swf"
+           url.html5="%FIRSTXML%/graphics/scrollarea.js"
+           align="bottom" x="0" y="0"
+           onhover_autoscrolling="false"
+           direction="h"/>
+	
+	</layer>
+	
+	
+	<layer name="scrollPrevArrow_thumbnailsBar_theme02" 
+         keep="true"
+         type="image"
+         visible="false"
+         parent="thumbnailsBar_thumbnailsBar_theme02"
+         targetHeight="0"
+         targetWidth="0"
+         zorder="2"
+         onloaded="loadedImages_thumbnailsBar_theme02(arrow1);"
+         url="%FIRSTXML%/graphics/classicthumbnailsbar/btn_scroll_left.png"
+         align="left"
+	/>
+	
+	
+	<layer name="scrollNextArrow_thumbnailsBar_theme02" 
+         keep="true"
+         type="image"
+         visible="false"
+         parent="thumbnailsBar_thumbnailsBar_theme02"
+         targetHeight="0"
+         targetWidth="0"
+         zorder="2"
+         onloaded="loadedImages_thumbnailsBar_theme02(arrow2);"
+         url="%FIRSTXML%/graphics/classicthumbnailsbar/btn_scroll_right.png"
+         align="right"
+	/>
+	
+	<action name="loadedImages_thumbnailsBar_theme02">
+		if(%1 == "arrow1",
+			set(arrow1Loaded_thumbnailsBar_theme02, true);
+		);
+		if(%1 == "arrow2",
+			set(arrow2Loaded_thumbnailsBar_theme02, true);
+		);
+		if(%1 == "border",
+			if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+				set(borderLoaded_thumbnailsBar_theme02, true);
+			);
+		);
+		if(%1 == "thumbnail",
+			inc(thumbnailsLoadedCounter_thumbnailsBar_theme02);
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandler_thumbnailsBar_theme02">
+		
+		set(thumbsCount_thumbnailsBar_theme02, 0);
+		
+		
+		
+		
+		
+		
+		
+		
+		set(thumbsCount_thumbnailsBar_theme02, get(panoramagroup.count));
+		
+		loadThumbs_thumbnailsBar_theme02();
+		
+		if(firstInit_thumbnailsBar_theme02,
+			onLoadCompleteHandlerPartThree_thumbnailsBar_theme02();
+		,
+			onLoadCompleteHandlerPartTwo_thumbnailsBar_theme02();
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandlerPartTwo_thumbnailsBar_theme02">
+		set(imgCounter_thumbnailsBar_theme02, 3);
+		
+		if(arrow1Loaded_thumbnailsBar_theme02,
+			dec(imgCounter_thumbnailsBar_theme02);
+		);
+		if(arrow2Loaded_thumbnailsBar_theme02,
+			dec(imgCounter_thumbnailsBar_theme02);
+		);
+		if(thumbsCount_thumbnailsBar_theme02 == thumbnailsLoadedCounter_thumbnailsBar_theme02,
+			dec(imgCounter_thumbnailsBar_theme02);
+		);
+		
+		if(imgCounter_thumbnailsBar_theme02 LE 0,
+			stopdelayedcall(delayedCallOnLoadComplete_thumbnailsBar_theme02);
+			onLoadCompleteHandlerPartThree_thumbnailsBar_theme02();
+		,
+			delayedcall(delayedCallOnLoadComplete_thumbnailsBar_theme02, 0.2, onLoadCompleteHandlerPartTwo_thumbnailsBar_theme02());
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandlerPartThree_thumbnailsBar_theme02">
+		resetMouseBehavior_thumbnailsBar_theme02();
+		highlightCurrentThumb_thumbnailsBar_theme02();
+		
+		
+		if(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent,
+			mul(adjustWidth_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginX), 2);
+			add(adjustWidth_thumbnailsBar_theme02, get(layer[thumbsScrollArea_thumbnailsBar_theme02].width));
+			mul(adjustHeight_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginY), 2);
+			add(adjustHeight_thumbnailsBar_theme02, get(layer[thumbsScrollArea_thumbnailsBar_theme02].height));
+			
+			
+			if(adjustWidth_thumbnailsBar_theme02 GT stagewidth,
+				set(adjustWidth_thumbnailsBar_theme02, get(stagewidth));
+				set(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent, false);
+			,
+				if(adjustHeight_thumbnailsBar_theme02 GT stageheight,
+					set(adjustHeight_thumbnailsBar_theme02, get(stageheight));
+					set(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent, false);
+				);
+			);
+			
+			setSize_thumbnailsBar_theme02(get(adjustWidth_thumbnailsBar_theme02), get(adjustHeight_thumbnailsBar_theme02));
+		);
+		
+		setupArrows_thumbnailsBar_theme02(true);
+		
+		
+		if (thumbsCounter_thumbnailsBar_theme02 LE 0,
+			set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, false);
+		);
+		
+		
+		set(startResize_thumbnailsBar_theme02, true);
+		set(firstInit_thumbnailsBar_theme02, true);
+	</action>
+	
+	
+	<action name="onResizeHandler_thumbnailsBar_theme02">
+		
+		delayedcall(0.1, onResizeCallback_thumbnailsBar_theme02(false); );
+	</action>
+	
+	
+	<action name="onResizeCallback_thumbnailsBar_theme02">
+		if(startResize_thumbnailsBar_theme02,
+			setSize_thumbnailsBar_theme02(get(layer[scrollAreaContainer_thumbnailsBar_theme02].targetWidth), get(layer[scrollAreaContainer_thumbnailsBar_theme02].targetHeight));
+			setupArrows_thumbnailsBar_theme02(%1);
+			
+			
+			if (thumbsCounter_thumbnailsBar_theme02 LE 0,
+				set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, false);
+			);
+		);
+	</action>
+	
+	
+		<action name="showWithThumbnailsButton_thumbnailsBar_theme02">
+			set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, true);
+			onResizeCallback_thumbnailsBar_theme02(true);
+		</action>
+		
+		<action name="hideWithThumbnailsButton_thumbnailsBar_theme02">
+			set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, false);
+		</action>
+	
+	
+		<action name="showWithControlsBar_thumbnailsBar_theme02">
+			
+				if (tour_displaythumbnails,
+					set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, true);
+					onResizeCallback_thumbnailsBar_theme02(true);
+				,
+					set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, false);
+				);
+		</action>
+		
+		<action name="hideWithControlsBar_thumbnailsBar_theme02">
+			set(layer[thumbnailsBar_thumbnailsBar_theme02].visible, false);
+		</action>
+	
+	
+	<action name="thumbnailBorderDrawInit_thumbnailsBar_theme02">
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetX, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderWidth));
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetY, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderWidth));
+		
+		
+		mul(totalOffsetX_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderWidth), 2);
+		mul(totalOffsetY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderWidth), 2);
+		
+		
+		if(startResize_thumbnailsBar_theme02,
+			sub(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth, get(totalOffsetX_thumbnailsBar_theme02));
+			sub(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight, get(totalOffsetY_thumbnailsBar_theme02));
+		);
+		
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbWidth, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth));
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbHeight, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight));
+		
+		add(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth, get(totalOffsetX_thumbnailsBar_theme02));
+		add(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight, get(totalOffsetY_thumbnailsBar_theme02));
+	</action>
+		
+	
+	<action name="thumbnailBorderImageInit_thumbnailsBar_theme02">
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetX, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetX));
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetY, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetY));
+		
+		
+		mul(totalOffsetX_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetX), 2);
+		mul(totalOffsetY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetY), 2);
+		
+		
+		if(startResize_thumbnailsBar_theme02,
+			sub(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth, get(totalOffsetX_thumbnailsBar_theme02));
+			sub(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight, get(totalOffsetY_thumbnailsBar_theme02));
+		);
+		
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbWidth, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth));
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbHeight, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight));
+		
+		add(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth, get(totalOffsetX_thumbnailsBar_theme02));
+		add(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight, get(totalOffsetY_thumbnailsBar_theme02));
+		
+		
+		div(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].height), 4);
+		
+		
+		set(cropX_thumbnailsBar_theme02, 0);
+		set(cropY_thumbnailsBar_theme02, 0);
+		set(cropW_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].width));
+		set(cropH_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropDefault, get(cropX_thumbnailsBar_theme02), '|', get(cropY_thumbnailsBar_theme02), '|', get(cropW_thumbnailsBar_theme02), '|', get(cropH_thumbnailsBar_theme02));
+
+		
+		add(cropY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropHover, get(cropX_thumbnailsBar_theme02), '|', get(cropY_thumbnailsBar_theme02), '|', get(cropW_thumbnailsBar_theme02), '|', get(cropH_thumbnailsBar_theme02));
+		
+		
+		add(cropY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropSelected, get(cropX_thumbnailsBar_theme02), '|', get(cropY_thumbnailsBar_theme02), '|', get(cropW_thumbnailsBar_theme02), '|', get(cropH_thumbnailsBar_theme02));
+		
+		
+		add(cropY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropVisited, get(cropX_thumbnailsBar_theme02), '|', get(cropY_thumbnailsBar_theme02), '|', get(cropW_thumbnailsBar_theme02), '|', get(cropH_thumbnailsBar_theme02));
+		
+		
+		set(scaleX_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetX));
+		set(scaleY_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].offsetY));
+		sub(scaleW_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].width), get(totalOffsetX_thumbnailsBar_theme02));
+		sub(scaleH_thumbnailsBar_theme02, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].quarterHeight), get(totalOffsetY_thumbnailsBar_theme02));
+		txtadd(layer[thumbnailBorderSource_thumbnailsBar_theme02].scale9grid, get(scaleX_thumbnailsBar_theme02), '|', get(scaleY_thumbnailsBar_theme02), '|', get(scaleW_thumbnailsBar_theme02), '|', get(scaleH_thumbnailsBar_theme02));
+	</action>
+	
+	
+	<action name="loadThumbs_thumbnailsBar_theme02">
+		if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			set(imgCounter_thumbnailsBar_theme02, 1);
+		,
+			set(imgCounter_thumbnailsBar_theme02, 0);
+		);
+		
+		if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			if(borderLoaded_thumbnailsBar_theme02,
+				dec(imgCounter_thumbnailsBar_theme02);
+			);
+		);
+		
+		if(imgCounter_thumbnailsBar_theme02 LE 0,
+			stopdelayedcall(delayedCallOnLoadCompleteBorder_thumbnailsBar_theme02);
+			loadThumbsPartTwo_thumbnailsBar_theme02();
+		,
+			delayedcall(delayedCallOnLoadCompleteBorder_thumbnailsBar_theme02, 0.2, loadThumbs_thumbnailsBar_theme02());
+		);
+	</action>
+	
+	<action name="loadThumbsPartTwo_thumbnailsBar_theme02">
+		ifnot(layer[scrollAreaContainer_thumbnailsBar_theme02].ready,
+			
+			
+			if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+				thumbnailBorderImageInit_thumbnailsBar_theme02();
+			,
+				thumbnailBorderDrawInit_thumbnailsBar_theme02();
+			);
+			
+			
+			set(thumbsCounter_thumbnailsBar_theme02, 0);
+			
+			
+			
+			
+			
+			
+				for( set(i_thumbnailsBar_theme02, 0), i_thumbnailsBar_theme02 LT panoramagroup.count, inc(i_thumbnailsBar_theme02),
+					createThumb_thumbnailsBar_theme02(get(panoramagroup[get(i_thumbnailsBar_theme02)].mainscene), get(panoramagroup[get(i_thumbnailsBar_theme02)].thumburl), get(i_thumbnailsBar_theme02), get(panoramagroup[get(i_thumbnailsBar_theme02)].titleid));
+					inc(thumbsCounter_thumbnailsBar_theme02);
+				);
+			
+			
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].currentThumbsCount, get(thumbsCounter_thumbnailsBar_theme02));
+			
+			
+			setSize_thumbnailsBar_theme02(get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].width), get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].height));
+			
+			
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].visible, true);
+			
+			
+				if (tour_displaycontrols,
+					showWithControlsBar_thumbnailsBar_theme02();
+				,
+					hideWithControlsBar_thumbnailsBar_theme02();
+				);
+			
+			
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].ready, true);
+		);
+	</action>
+	
+	
+	<action name="setSize_thumbnailsBar_theme02">
+		
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].targetWidth, %1);
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].targetHeight, %2);
+		
+		
+		set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].width, %1);
+		set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].height, %2);
+		layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].updatepos();
+		
+		
+		mul(totalMarginX_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginX), 2);
+		mul(totalMarginY_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginY), 2);
+		
+			add(totalPluginHeight_thumbnailsBar_theme02, get(totalMarginY_thumbnailsBar_theme02), get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight));
+			
+			
+			
+			if(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].pixelheight LT totalPluginHeight_thumbnailsBar_theme02,
+				set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].height, get(totalPluginHeight_thumbnailsBar_theme02));
+			);
+		
+		layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].updatepos();
+		
+		
+		sub(containerWidth_thumbnailsBar_theme02, get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].pixelwidth), get(totalMarginX_thumbnailsBar_theme02));
+		sub(containerHeight_thumbnailsBar_theme02, get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].pixelheight), get(totalMarginY_thumbnailsBar_theme02));
+
+		
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].width, get(containerWidth_thumbnailsBar_theme02));
+		set(layer[scrollAreaContainer_thumbnailsBar_theme02].height, get(containerHeight_thumbnailsBar_theme02));
+		
+		set(scrollAreaSize_thumbnailsBar_theme02, 0);
+		
+		
+		mul(totalThumbsSpacer_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].currentThumbsCount), get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbSpacer));
+		sub(totalThumbsSpacer_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbSpacer));
+		
+		set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible, true);
+		
+
+			mul(scrollAreaSize_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth), get(layer[scrollAreaContainer_thumbnailsBar_theme02].currentThumbsCount));
+			add(scrollAreaSize_thumbnailsBar_theme02, get(totalThumbsSpacer_thumbnailsBar_theme02));
+			
+			set(layer[thumbsScrollArea_thumbnailsBar_theme02].width, get(scrollAreaSize_thumbnailsBar_theme02));
+			set(layer[thumbsScrollArea_thumbnailsBar_theme02].height, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight));
+			
+			
+			if(layer[scrollAreaContainer_thumbnailsBar_theme02].width LT layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth,
+				set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible, false);
+			,
+				verifyThumbnailsBarVisibility_thumbnailsBar_theme02();
+			);
+			
+		
+		
+		if(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].width LT 0,
+			set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible, false);
+		);
+		
+	</action>
+	
+	
+	<action name="verifyThumbnailsBarVisibility_thumbnailsBar_theme02">
+		if(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible,
+			set(boolValue_thumbnailsBar_theme02, false);
+			
+			if (tour_displaythumbnails,
+				if (tour_displaycontrols,
+					set(boolValue_thumbnailsBar_theme02, true);
+				);
+			);
+			
+			set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible, get(boolValue_thumbnailsBar_theme02));
+		);
+	</action>
+	
+	
+	<action name="createThumb_thumbnailsBar_theme02">
+
+			add(offsetFactor_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth), get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbSpacer));
+	
+			mul(thumbIncPos_thumbnailsBar_theme02, %3, get(offsetFactor_thumbnailsBar_theme02));
+			
+			
+			if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+				add(thumbIncPos_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetX));
+			);
+			
+		
+		mul(negativeOffsetX_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetX), -1);
+		mul(negativeOffsetY_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetY), -1);
+		
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_thumbnailsBar_theme02');
+		addlayer(get(thumbName));
+
+		
+		set(thumbTitleName, 'thumbtitle_');
+		txtadd(thumbTitleName, %1);
+		txtadd(thumbTitleName, '_thumbnailsBar_theme02');
+		addlayer(get(thumbTitleName));	
+		set(layer[get(thumbTitleName)].type              , text);
+		set(layer[get(thumbTitleName)].keep              , true);
+		set(layer[get(thumbTitleName)].parent            , get(thumbName));
+    set(layer[get(thumbTitleName)].interactivecontent, false);
+		set(layer[get(thumbTitleName)].align             , bottom);
+		set(layer[get(thumbTitleName)].x                 , 0);
+		set(layer[get(thumbTitleName)].y                 , 0);
+		set(layer[get(thumbTitleName)].css               , "text-align:center;color:#ffffff;
+                                                        font-family:Garamond;font-weight:bold;font-size:14px;");
+    set(layer[get(thumbTitleName)].bg                , true);
+    set(layer[get(thumbTitleName)].bgcolor           , 0x000000);
+    set(layer[get(thumbTitleName)].bgalpha           , 0.80000000000000004);
+    set(layer[get(thumbTitleName)].bgroundedge       , 5);
+    set(layer[get(thumbTitleName)].bgborder          , 3.0 0xffffff 1);
+    set(layer[get(thumbTitleName)].mergedalpha       , false);
+    set(layer[get(thumbTitleName)].enabled           , false);
+    set(layer[get(thumbTitleName)].capture           , false);
+		set(layer[get(thumbTitleName)].width             , get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbWidth));
+		getmessage(layer[get(thumbTitleName)].html, %4);
+
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+		addlayer(get(thumbBorderName));
+		
+		
+		ifnot(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			set(layer[get(thumbBorderName)].type, container);
+			set(layer[get(thumbBorderName)].parent, thumbsScrollArea_thumbnailsBar_theme02);
+		);
+    set(layer[get(thumbBorderName)].maskchildren, true);
+
+		
+		set(layer[get(thumbName)].onloaded, loadedImages_thumbnailsBar_theme02("thumbnail"););
+		set(layer[get(thumbName)].url, %2);
+		set(layer[get(thumbName)].keep, true);
+		set(layer[get(thumbName)].width, get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbWidth));
+		set(layer[get(thumbName)].height, get(layer[scrollAreaContainer_thumbnailsBar_theme02].thumbHeight));
+		set(layer[get(thumbName)].align, topleft);
+		
+		
+			set(layer[get(thumbName)].y, get(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetY));
+		
+			if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+				set(layer[get(thumbName)].parent, thumbsScrollArea_thumbnailsBar_theme02);
+				set(layer[get(thumbName)].x, get(thumbIncPos_thumbnailsBar_theme02));
+			,
+				set(layer[get(thumbName)].parent, get(thumbBorderName));
+				set(layer[get(thumbName)].x, get(layer[scrollAreaContainer_thumbnailsBar_theme02].offsetX));
+				set(layer[get(thumbName)].onclick, resetMouseBehavior_thumbnailsBar_theme02(); mainloadscene(%1); delayedcall(0.1,highlightThumb_thumbnailsBar_theme02(%1)));
+			);	
+			
+		
+		
+		set(layer[get(thumbBorderName)].keep, true);
+		set(layer[get(thumbBorderName)].width, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth));
+		set(layer[get(thumbBorderName)].height, get(layer[scrollAreaContainer_thumbnailsBar_theme02].itemHeight));
+		set(layer[get(thumbBorderName)].align, topleft);
+		
+		if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			set(layer[get(thumbBorderName)].url, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].url));
+			set(layer[get(thumbBorderName)].scale9grid, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].scale9grid));
+			set(layer[get(thumbBorderName)].parent, get(thumbName));
+			set(layer[get(thumbBorderName)].x, get(negativeOffsetX_thumbnailsBar_theme02));
+			set(layer[get(thumbBorderName)].y, get(negativeOffsetY_thumbnailsBar_theme02));
+			set(layer[get(thumbBorderName)].onclick, resetMouseBehavior_thumbnailsBar_theme02(); mainloadscene(%1); delayedcall(0.1,highlightThumb_thumbnailsBar_theme02(%1)));
+		,
+			
+				set(layer[get(thumbBorderName)].x, get(thumbIncPos_thumbnailsBar_theme02)); 
+				
+		);
+
+
+		
+		setupMouseBehavior_thumbnailsBar_theme02(%1, %4);
+		
+	</action>
+	
+
+  <action name="updateTitles_thumbnailsBar_theme02">
+
+
+
+				for( set(i_thumbnailsBar_theme02, 0), i_thumbnailsBar_theme02 LT panoramagroup.count, inc(i_thumbnailsBar_theme02),
+		      set(thumbTitleName, 'thumbtitle_');
+ 	  		  txtadd(thumbTitleName, get(panoramagroup[get(i_thumbnailsBar_theme02)].mainscene));
+   	  		txtadd(thumbTitleName, '_thumbnailsBar_theme02');
+		      getmessage(layer[get(thumbTitleName)].html, get(panoramagroup[get(i_thumbnailsBar_theme02)].titleid));
+				);
+  </action>	
+	
+	<action name="removeThumb_thumbnailsBar_theme02">
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_thumbnailsBar_theme02');
+		removelayer(get(thumbName));
+		
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+		removelayer(get(thumbBorderName));
+
+		set(thumbTitleName, 'thumbtitle_');
+		txtadd(thumbTitleName, %1);
+		txtadd(thumbTitleName, '_thumbnailsBar_theme02');
+		removelayer(get(thumbTitleName));
+
+	</action>
+	
+	
+	
+	<action name="setupArrows_thumbnailsBar_theme02">
+		
+		if(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent,
+			hideArrows_thumbnailsBar_theme02();
+		,
+			ifnot(device.touchdevice,
+				
+					if(layer[scrollAreaContainer_thumbnailsBar_theme02].width LT layer[thumbsScrollArea_thumbnailsBar_theme02].width,
+				
+					showArrows_thumbnailsBar_theme02();
+				,
+					hideArrows_thumbnailsBar_theme02();
+				);
+			,
+				hideArrows_thumbnailsBar_theme02();
+			);
+		);
+		
+		
+		if(%1,
+			scrollToCurrentThumb_thumbnailsBar_theme02();
+		);
+		
+		
+			
+			if(layer[scrollAreaContainer_thumbnailsBar_theme02].width LT layer[scrollAreaContainer_thumbnailsBar_theme02].itemWidth,
+				set(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].visible, false);
+			);
+	</action>
+	
+	
+	<action name="showArrows_thumbnailsBar_theme02">
+		
+		
+		
+		
+		set(layer[scrollPrevArrow_thumbnailsBar_theme02].visible, true);
+		set(layer[scrollNextArrow_thumbnailsBar_theme02].visible, true);
+		
+		
+		
+			
+			add(totalArrowSize_thumbnailsBar_theme02, get(layer[scrollPrevArrow_thumbnailsBar_theme02].width), get(layer[scrollNextArrow_thumbnailsBar_theme02].width));
+		
+			
+			sub(scrollAreaContainerSize_thumbnailsBar_theme02, get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].pixelwidth), get(totalArrowSize_thumbnailsBar_theme02));
+		
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].width, get(scrollAreaContainerSize_thumbnailsBar_theme02));
+			
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].x, get(layer[scrollPrevArrow_thumbnailsBar_theme02].width));
+			
+		
+		
+		set(layer[scrollPrevArrow_thumbnailsBar_theme02].onhover, scrollPrev_thumbnailsBar_theme02(););
+		set(layer[scrollNextArrow_thumbnailsBar_theme02].onhover, scrollNext_thumbnailsBar_theme02(););
+		
+		set(layer[scrollPrevArrow_thumbnailsBar_theme02].onclick, scrollPrev_thumbnailsBar_theme02(get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedAcceleration)););
+		set(layer[scrollNextArrow_thumbnailsBar_theme02].onclick, scrollNext_thumbnailsBar_theme02(get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedAcceleration)););
+		
+		
+		
+		
+		
+		set(layer[scrollPrevArrow_thumbnailsBar_theme02].onout, set(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed, get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedInit)););
+		set(layer[scrollNextArrow_thumbnailsBar_theme02].onout, set(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed, get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedInit)););
+		
+	</action>
+	
+	
+	
+	
+	<action name="hideArrows_thumbnailsBar_theme02">
+		
+		set(layer[scrollPrevArrow_thumbnailsBar_theme02].visible, false);
+		set(layer[scrollNextArrow_thumbnailsBar_theme02].visible, false);
+		
+		
+
+			mul(totalMargin_thumbnailsBar_theme02, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginX), 2);
+			
+			sub(scrollAreaContainerSize_thumbnailsBar_theme02, get(layer[get(layer[scrollAreaContainer_thumbnailsBar_theme02].parent)].pixelwidth), get(totalMargin_thumbnailsBar_theme02));
+
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].width, get(scrollAreaContainerSize_thumbnailsBar_theme02));
+			set(layer[scrollAreaContainer_thumbnailsBar_theme02].x, get(layer[scrollAreaContainer_thumbnailsBar_theme02].marginX));
+			 
+			
+	</action>
+	
+	
+	<action name="scrollPrev_thumbnailsBar_theme02">
+		
+		
+		if(%1,
+			inc(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed, %1);
+		);
+		
+		layer[thumbsScrollArea_thumbnailsBar_theme02].stopscrolling();
+		
+		set(scrollLimit_thumbnailsBar_theme02, 0);
+		
+		
+			
+				sub(scrollLimit_thumbnailsBar_theme02, get(layer[thumbsScrollArea_thumbnailsBar_theme02].width), get(layer[scrollAreaContainer_thumbnailsBar_theme02].width));
+				div(scrollLimit_thumbnailsBar_theme02, 2);
+			
+			add(layer[thumbsScrollArea_thumbnailsBar_theme02].x, get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed));
+			if(layer[thumbsScrollArea_thumbnailsBar_theme02].x GE scrollLimit_thumbnailsBar_theme02,
+				set(layer[thumbsScrollArea_thumbnailsBar_theme02].x, get(scrollLimit_thumbnailsBar_theme02));
+			);
+		
+		if(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed LT layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedMax,
+			inc(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed);
+		);
+		
+	</action>
+	
+	
+	<action name="scrollNext_thumbnailsBar_theme02">
+		
+		
+		if(%1,
+			inc(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed, %1);
+		);
+		
+		layer[thumbsScrollArea_thumbnailsBar_theme02].stopscrolling();
+		
+			
+			sub(scrollLimit_thumbnailsBar_theme02, get(layer[thumbsScrollArea_thumbnailsBar_theme02].width), get(layer[scrollAreaContainer_thumbnailsBar_theme02].width));
+			
+				div(scrollLimit_thumbnailsBar_theme02, 2);
+			mul(scrollLimit_thumbnailsBar_theme02, -1);
+			
+			sub(layer[thumbsScrollArea_thumbnailsBar_theme02].x, get(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed));
+			if(layer[thumbsScrollArea_thumbnailsBar_theme02].x LE scrollLimit_thumbnailsBar_theme02,
+				set(layer[thumbsScrollArea_thumbnailsBar_theme02].x, get(scrollLimit_thumbnailsBar_theme02));
+			);
+		
+		if(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed LT layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeedMax,
+			inc(layer[scrollAreaContainer_thumbnailsBar_theme02].scrollSpeed);
+		);
+		
+	</action>
+	
+	
+	<action name="resetMouseBehavior_thumbnailsBar_theme02">
+	
+		
+		
+			
+			for( set(j_thumbnailsBar_theme02, 0), j_thumbnailsBar_theme02 LT panoramagroup.count, inc(j_thumbnailsBar_theme02),
+				set(thumbBorderName, 'thumbBorder_');
+				txtadd(thumbBorderName, get(panoramagroup[get(j_thumbnailsBar_theme02)].mainscene));
+				txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+				
+				setupMouseBehavior_thumbnailsBar_theme02(get(panoramagroup[get(j_thumbnailsBar_theme02)].mainscene), get(panoramagroup[get(j_thumbnailsBar_theme02)].titleid));
+			);
+		
+	</action>
+	
+	
+	<action name="setupMouseBehavior_thumbnailsBar_theme02">
+
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_thumbnailsBar_theme02');
+		
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+		
+		if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			set(layer[get(thumbBorderName)].crop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropDefault));
+			set(layer[get(thumbBorderName)].onovercrop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropHover));
+			set(layer[get(thumbBorderName)].ondowncrop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropHover));
+			set(layer[get(thumbBorderName)].tooltip, %2);
+				set(layer[get(thumbBorderName)].onhover, showTooltip('plugin', tooltipStyle_thumbnailsBar_theme02));
+				set(layer[get(thumbBorderName)].onout, hideTooltip());
+		,
+			set(layer[get(thumbBorderName)].bgcolor, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderColorDefault));
+			set(layer[get(thumbBorderName)].bgalpha, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderAlphaDefault));
+				set(layer[get(thumbName)].tooltip, %2);
+				set(layer[get(thumbName)].onhover, showTooltip('plugin', tooltipStyle_thumbnailsBar_theme02));
+			
+			set(layer[get(thumbName)].onover, 
+				set(layer[get(parent)].bgcolor, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderColorHover));
+				set(layer[get(parent)].bgalpha, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderAlphaHover));
+			);
+			
+			set(layer[get(thumbName)].onout, 
+				set(layer[get(parent)].bgcolor, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderColorDefault));
+				set(layer[get(parent)].bgalpha, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderAlphaDefault));
+				hideTooltip();
+			);
+		);
+	
+	</action>
+	
+	
+	<action name="highlightCurrentThumb_thumbnailsBar_theme02">
+			delayedcall(0.1,highlightThumb_thumbnailsBar_theme02(get(panoramagroup[get(scene[get(xml.scene)].group)].mainscene)));
+	</action>
+	
+	
+	<action name="highlightThumb_thumbnailsBar_theme02">
+	
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+		
+		if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+			set(layer[get(thumbBorderName)].crop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropSelected));
+			set(layer[get(thumbBorderName)].onovercrop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropSelected));
+			set(layer[get(thumbBorderName)].ondowncrop, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].cropSelected));
+		,
+			set(thumbName, 'thumb_');
+			txtadd(thumbName, %1);
+			txtadd(thumbName, '_thumbnailsBar_theme02');
+			
+			set(layer[get(thumbBorderName)].bgcolor, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderColorSelected));
+			set(layer[get(thumbBorderName)].bgalpha, get(layer[thumbnailBorderSource_thumbnailsBar_theme02].borderAlphaSelected));
+			
+			set(layer[get(thumbName)].onover, "");
+			set(layer[get(thumbName)].onout, hideTooltip(););
+		);
+
+		scrollToThumb_thumbnailsBar_theme02(%1);
+	</action>
+	
+	
+	<action name="scrollToCurrentThumb_thumbnailsBar_theme02">
+			scrollToThumb_thumbnailsBar_theme02(get(panoramagroup[get(scene[get(xml.scene)].group)].mainscene));
+	</action>
+	
+	
+	<action name="scrollToThumb_thumbnailsBar_theme02">
+		
+		set(thumbName, 'thumb_');
+		set(thumbBorderName, 'thumbBorder_');
+		
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_thumbnailsBar_theme02');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_thumbnailsBar_theme02');
+
+			set(posX_thumbnailsBar_theme02, 0);
+			if(layer[thumbnailBorderSource_thumbnailsBar_theme02].url,
+				div(halfThumbWidth_thumbnailsBar_theme02, get(layer[get(thumbName)].width), 2);
+				ifnot(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent,
+					add(posX_thumbnailsBar_theme02, get(layer[get(thumbName)].x), get(halfThumbWidth_thumbnailsBar_theme02));
+				);
+				if(layer[thumbsScrollArea_thumbnailsBar_theme02].scrolltocenter,
+					layer[thumbsScrollArea_thumbnailsBar_theme02].scrolltocenter(get(posX_thumbnailsBar_theme02), 0);
+				);
+			,
+				div(halfThumbWidth_thumbnailsBar_theme02, get(layer[get(thumbBorderName)].width), 2);
+				ifnot(layer[scrollAreaContainer_thumbnailsBar_theme02].adjustToContent,
+					add(posX_thumbnailsBar_theme02, get(layer[get(thumbBorderName)].x), get(halfThumbWidth_thumbnailsBar_theme02));
+				);
+				if(layer[thumbsScrollArea_thumbnailsBar_theme02].scrolltocenter,
+					layer[thumbsScrollArea_thumbnailsBar_theme02].scrolltocenter(get(posX_thumbnailsBar_theme02), 0);
+				);
+			);
+		
+	</action>
+	
+
+
+
+
+ <!-- ********** --> <!-- 360Images CoOL Hotspots Plugin --> <!-- CoOL Hotspots --> <!-- id : cool_hotspot --> <!-- ********** -->        <include url="%FIRSTXML%/graphics/coolhotspots.xml"/>   <style 	cooltype="bubble" 	name="bubble" 	type="container"  	width="50"  	height="50"  	bgalpha="0" 	bgcapture="true"   	accuracy="1" 	bubble_width="50"  	bubble_width_onover="150" 	alwayson="false" 	ttalign="top" 	ttedge="bottom" 	 	onover=" 	hidebbhs(); 	set(zorder,20); 	tween(width|height,get(bubble_width_onover)); 	tween(layer[get(mybubble)].width,get(bubble_width_onover)); 	tween(layer[get(mybubble)].height,get(bubble_width_onover)); 	tween(layer[get(mybubble_shadow)].width,get(bubble_width_onover)); 	tween(layer[get(mybubble_shadow)].height,get(bubble_width_onover)); 	tween(layer[get(mypreview)].alpha,1); 	set(layer[get(mypreview)].enabled,true); 	"     	onout=" 	set(zorder,2);  	tween(width|height,get(bubble_width)); 	tween(layer[get(mybubble)].width,get(bubble_width)); 	tween(layer[get(mybubble)].height,get(bubble_width)); 	tween(layer[get(mybubble_shadow)].width,get(bubble_width)); 	tween(layer[get(mybubble_shadow)].height,get(bubble_width)); 	ifnot(alwayson,tween(layer[get(mypreview)].alpha,0));  	set(layer[get(mypreview)].enabled,false);  	" 	 	onloaded=" 	txtadd(hotspot[get(name)].permanentTooltipForSpot, get(tooltip), '_permanent'); 	delayedcall(0.1, 	if(layer[get(permanentTooltipForSpot)].html, 		set(layer[get(permanentTooltipForSpot)].ox,0); 		set(layer[get(permanentTooltipForSpot)].oy,-10); 		); 	); 	 	txtadd(mybubble,'bubble',get(name)); 	addlayer(get(mybubble)); 	copy(hotspot[get(name)].mybubble,mybubble); 	layer[get(mybubble)].loadstyle(cool_hotspotbubblelayer); 	txtadd(mybubble_shadow,'bubble_shadow',get(name)); 	addlayer(get(mybubble_shadow)); 	copy(hotspot[get(name)].mybubble_shadow,mybubble_shadow); 	layer[get(mybubble_shadow)].loadstyle(cool_hotspotbubblelayer_shadow); 			 	txtadd(mypreview,'preview_',get(name)); 	addlayer(get(mypreview)); 	copy(hotspot[get(name)].mypreview,mypreview); 	 	 	if(linkedscene, 		set(layer[get(mypreview)].url,get(scene[get(linkedscene)].thumburl)); 	); 	if(linkedgroup, 		set(layer[get(mypreview)].url,get(panoramagroup[get(linkedgroup)].thumburl)); 	); 	if(photourl, 		set(layer[get(mypreview)].url,get(photourl)); 	); 	 	 	layer[get(mypreview)].loadstyle(cool_hotspotbubble_previewlayer); 	 	txtadd(parentlayer,'hotspot[',get(name),']'); 	copy(layer[get(mybubble)].parent,parentlayer); 	copy(layer[get(mybubble_shadow)].parent,parentlayer); 		 	txtadd(parentlayer2,'layer[',get(mybubble),']'); 	copy(layer[get(mypreview)].parent,parentlayer2); 		 	txtadd(clickaction,'callwith(hotspot[',get(name),'],onclick)'); 	copy(layer[get(mypreview)].onclick,clickaction);  	" /> <style  	name="cool_hotspotbubblelayer"  	type="container"  	width="50"  	height="50"  	bgalpha="0"  	bgborder="3 0xffffff 1.00"  	bgroundedge="150"   	bgcapture="true"  	maskchildren="true"  	accuracy="1" 	 	ondown.touch="callwith(get(parent),onover);" 	  	align="center" 	 /> <style  	name="cool_hotspotbubblelayer_shadow"  	type="container"  	width="50"  	height="50"  	bgalpha="0"  	bgborder="0 0xffffff 0"  	bgroundedge="150"   	bgcapture="false"  	accuracy="1"  	align="center" 	 		bgshadow="5 5 10 0 0x000000 0.5 inset" 	 /> <style  	name="cool_hotspotbubble_previewlayer"  	align="center" 	accuracy="1" 	width="prop"  	height="150"  	enabled="false" 	onloaded="if(pixelheight GT pixelwidth,copy(width,height);set(height,prop));set(alpha,0)" />       
+<!-- ********** -->
+<!-- Logo -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+  <layer align="topleft"
+         x="10"
+         y="10"
+         zorder="29"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+
+			tooltip="logotooltipText"
+			onhover="showTooltip('plugin');"
+			onout="hideTooltip();"
+         url="%FIRSTXML%/graphics/logo/devtraco-logo-b.png" 
+         onclick="
+getmessage(urltoopen,logowebsiteurl);openurl(get(urltoopen),_blank);
+"
+
+         height="63"
+         width="149"
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+      set(layer[logo].visible, true);
+  </action>
+
+
+
+
+
+<!-- ********** -->
+<!-- Sans Control Bar -->
+<!-- id : SansControlBar -->
+<!-- ********** -->
+
+  <krpano SansControlBarbarbuilt="false" SansControlBarbackgroundwidthwhenclosed="0" SansControlBarbackgroundwidthwhenopened="0" SansControlBarIsOpened="false" />
+  <events name="SansControlBarevents" 
+    onxmlcomplete="SansControlBarbuildMenuBar();" 
+
+
+    keep="true" />
+
+
+
+  <action name="SansControlBarbuildMenuBar">
+    ifnot (SansControlBarbarbuilt, SansControlBarbuildMenu(); set(SansControlBarbarbuilt, true););
+  </action>
+
+  <style name="SansControlBar_btn_style"
+         keep="true"
+         edge="bottom"
+         align="bottom"
+         x="0" y="0"
+         width="40" height="40"
+         crop="0|0|60|60"
+         onovercrop="0|60|60|60"
+         ondowncrop="0|120|60|60"
+         onhover="showTooltip('plugin', SansControlBarmenuTooltipStyle, right);"
+         onout="hideTooltip();"
+         />
+  <style name="SansControlBar_btn_style_off"
+         keep="true"
+         edge="bottom"
+         align="bottom"
+         x="0" y="0"
+         width="40" height="40"
+         onhover="showTooltip('plugin', SansControlBarmenuTooltipStyle, right);"
+         onout="hideTooltip();"
+         />
+
+  <layer name="SansControlBar_menu_bg"
+         keep="true"
+         type="container"
+         zorder="30"
+         width="40"
+         height="40"
+         align="right"
+         x="0" y="10"
+         maskchildren="true"
+         rotate="0"
+         visible="false"
+         >
+
+
+    <layer name="SansControlBarbtn_ctrlmode_move_to"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_move_to.png"
+            style="SansControlBar_btn_style"
+            tooltip="SansControlBarctrlmodeMoveTip"
+            onclick="setControlModeMoveTo();
+"
+            visible="false"
+            devices="desktop"
+            />
+    <layer name="SansControlBarbtn_ctrlmode_drag_to"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_drag_to.png"
+            style="SansControlBar_btn_style"
+            tooltip="SansControlBarctrlmodeDragTip"
+            onclick="setControlModeDragTo();
+"
+            visible="false"
+            devices="desktop"
+            />
+
+    <layer name="SansControlBarbtn_in"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_zoom_in.png"
+            ondown="viewControlZoomIn(false);"
+            onup="viewControlZoomStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarzoomInTip"
+            devices="desktop"
+            />
+    <layer name="SansControlBarbtn_out"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_zoom_out.png"
+            ondown="viewControlZoomOut(false);
+"
+            onup="viewControlZoomStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarzoomOutTip"
+            devices="desktop"
+            />
+
+    <layer name="SansControlBarbtn_left"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_move_left.png"
+            ondown="viewControlMoveLeft(false);
+"
+            onup="viewControlMoveHoriStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarmoveLeftTip"
+            devices="desktop"
+            />
+    <layer name="SansControlBarbtn_right"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_move_right.png"
+            ondown="viewControlMoveRight(false);
+"
+            onup="viewControlMoveHoriStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarmoveRightTip"
+            devices="desktop"
+            />
+
+    <layer name="SansControlBarbtn_up"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_move_up.png"
+            ondown="viewControlMoveUp(false);
+"
+            onup="viewControlMoveVertStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarmoveUpTip"
+            devices="desktop"
+            />
+    <layer name="SansControlBarbtn_down"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_move_down.png"
+            ondown="viewControlMoveDown(false);
+"
+            onup="viewControlMoveVertStop();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarmoveDownTip"
+            devices="desktop"
+            />
+
+
+
+    <layer name="SansControlBarbtn_prev_pano"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_previous_scene.png"
+            onclick="loadPreviousScene();
+"
+            style="SansControlBar_btn_style"
+            tooltip="SansControlBarprevSceneTip"
+            visible="false"
+            />
+    <layer name="SansControlBarbtn_next_pano"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_next_scene.png"
+            onclick="loadNextScene();
+"
+            style="SansControlBar_btn_style"
+            tooltip="SansControlBarnextSceneTip"
+            visible="false"
+            />
+
+
+
+    <layer name="SansControlBarbtn_openfs"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_enter_fs.png"
+            onclick="enterFullscreen();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            devices="fullscreensupport"
+            tooltip="SansControlBaropenFsTip"
+            />
+    <layer name="SansControlBarbtn_closefs"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_close_fs.png"
+            onclick="exitFullscreen();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            devices="fullscreensupport"
+            tooltip="SansControlBarcloseFsTip"
+            />
+
+    <layer name="SansControlBarbtn_autorotate_on"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_start_autorotation.png"
+            onclick="resumeautorotation();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarautorotateOnTip"
+            />
+    <layer name="SansControlBarbtn_autorotate_off"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_stop_autorotation.png"
+            onclick="pauseautorotation();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarautorotateOffTip"
+            />
+
+
+
+    <layer name="SansControlBarbtn_display_help"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_help.png"
+            onclick="SansControlBardisplayHelp();"
+            style="SansControlBar_btn_style"
+            devices="desktop"
+            visible="false"
+            tooltip="SansControlBardisplayHelpTip"
+            />
+    <layer name="SansControlBarbtn_close_help"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_help.png"
+            onclick="SansControlBarcloseHelp();"
+            style="SansControlBar_btn_style"
+            visible="false"
+            devices="desktop"
+            tooltip="SansControlBarhideHelpTip"
+            />
+
+
+
+    <layer name="SansControlBarbtn_hidecontrols"
+           url="%FIRSTXML%/graphics/sans controlbar/btn_hide_controls.png"
+           style="SansControlBar_btn_style"
+           onclick="SansControlBarhideMenuControls();hideTourControls();
+"
+           visible="false"
+           tooltip="SansControlBarhideControlsTip"
+           />
+    <layer name="SansControlBarbtn_showcontrols"
+           url="%FIRSTXML%/graphics/sans controlbar/btn_show_controls.png"
+           style="SansControlBar_btn_style"
+           onclick="SansControlBarshowMenuControls();showTourControls();
+"
+           tooltip="SansControlBardisplayControlsTip"
+           visible="false"
+           />
+ </layer>
+
+
+
+
+
+	<events name="SansControlBarcontrolmodechangedevent" 
+		oncontrolmodechanged="SansControlBarupdateControlModeButtons();" 
+		keep="true" />
+	<action name="SansControlBarHideControlModeButtons">
+		set(layer[SansControlBarbtn_ctrlmode_move_to].visible, false);
+		set(layer[SansControlBarbtn_ctrlmode_drag_to].visible, false);
+	</action>
+	<action name="SansControlBarShowControlModeButtons">
+		if (tour_controlmodemousetype == "moveto",
+			set(layer[SansControlBarbtn_ctrlmode_drag_to].visible, true);
+			set(layer[SansControlBarbtn_ctrlmode_move_to].visible, false);
+		,
+			set(layer[SansControlBarbtn_ctrlmode_move_to].visible, true);
+			set(layer[SansControlBarbtn_ctrlmode_drag_to].visible, false);
+		);
+	</action>
+	<action name="SansControlBarupdateControlModeButtons">
+	if (device.desktop,
+		if (SansControlBarIsOpened,
+			SansControlBarShowControlModeButtons();
+		,
+			SansControlBarHideControlModeButtons();
+		);
+	,
+		SansControlBarHideControlModeButtons();
+	);
+	</action>
+
+
+  <action name="SansControlBarhideMenuControls">
+    set(SansControlBarIsOpened, false);
+    set(layer[SansControlBarbtn_hidecontrols].visible, false);
+    set(layer[SansControlBarbtn_showcontrols].visible, true);
+if (scene.count GT 1,
+	set(layer[SansControlBarbtn_next_pano].visible, false);
+	set(layer[SansControlBarbtn_prev_pano].visible, false);
+);
+
+
+if (device.desktop,
+	set(layer[SansControlBarbtn_in].visible, false);
+	set(layer[SansControlBarbtn_out].visible, false);
+);
+if (device.desktop,
+	set(layer[SansControlBarbtn_up].visible, false);
+	set(layer[SansControlBarbtn_down].visible, false);
+);
+if (device.desktop,
+	set(layer[SansControlBarbtn_left].visible, false);
+	set(layer[SansControlBarbtn_right].visible, false);
+);
+	SansControlBarupdateFullscreenButtons();
+	SansControlBarupdateHelpButtons();
+
+
+	SansControlBarupdateAutorotationButtons();
+
+
+	SansControlBarupdateControlModeButtons();
+
+
+
+
+	set(layer[SansControlBar_menu_bg].height, get(SansControlBarbackgroundwidthwhenclosed));
+
+	set(layer[SansControlBar_menu_bg].visible, true);
+  </action>
+  <action name="SansControlBarshowMenuControls">
+    set(SansControlBarIsOpened, true);
+    set(layer[SansControlBarbtn_hidecontrols].visible, true);
+    set(layer[SansControlBarbtn_showcontrols].visible, false);
+	set(layer[SansControlBar_menu_bg].visible, true);
+if (scene.count GT 1,
+	set(layer[SansControlBarbtn_next_pano].visible, true);
+	set(layer[SansControlBarbtn_prev_pano].visible, true);
+);
+
+
+if (device.desktop,
+	set(layer[SansControlBarbtn_in].visible, true);
+	set(layer[SansControlBarbtn_out].visible, true);
+);
+if (device.desktop,
+	set(layer[SansControlBarbtn_up].visible, true);
+	set(layer[SansControlBarbtn_down].visible, true);
+);
+if (device.desktop,
+	set(layer[SansControlBarbtn_left].visible, true);
+	set(layer[SansControlBarbtn_right].visible, true);
+);
+	SansControlBarupdateFullscreenButtons();
+	SansControlBarupdateHelpButtons();
+
+
+	SansControlBarupdateAutorotationButtons();
+
+
+	SansControlBarupdateControlModeButtons();
+
+
+
+    set(layer[SansControlBar_menu_bg].height, get(SansControlBarbackgroundwidthwhenopened));
+  </action>
+
+  <layer name="SansControlBarhelpScreenBg"
+         align="center"
+         keep="true"
+         onclick="SansControlBarcloseHelp();"
+         url="%FIRSTXML%/graphics/sans controlbar/help_screen_bg.png"
+         visible="false"
+         rotate="-90"
+         height="50%"
+         width="prop"
+         zorder="97"
+         x="100%" />
+  <layer name="SansControlBarhelpScreenFg"
+         align="center"
+         keep="true"
+         onclick="SansControlBarcloseHelp();"
+         url="%FIRSTXML%/graphics/sans controlbar/help_screen_fg.png"
+         height="50%"
+         width="prop"
+         visible="false"
+         rotate="90"
+         zorder="98"
+         x="-100%"
+         displayed="false" />
+  <action name="SansControlBardisplayHelp">
+  if (device.desktop,
+    set(layer[SansControlBarhelpScreenFg].displayed,true);
+    set(layer[SansControlBarhelpScreenBg].visible,true);
+    set(layer[SansControlBarhelpScreenFg].visible,true);
+    tween(layer[SansControlBarhelpScreenFg].rotate,0, 1);
+    tween(layer[SansControlBarhelpScreenFg].x,0, 1);
+    tween(layer[SansControlBarhelpScreenBg].rotate,0, 1);
+    tween(layer[SansControlBarhelpScreenBg].x,0, 1);
+    SansControlBarupdateHelpButtons();
+  );
+  </action>
+  <action name="SansControlBarcloseHelp">
+  if (device.desktop,
+    set(layer[SansControlBarhelpScreenFg].displayed,false);
+    tween(layer[SansControlBarhelpScreenFg].rotate,  90, 1, easeOutQuad, set(layer[SansControlBarhelpScreenFg].visible,false););
+    tween(layer[SansControlBarhelpScreenFg].x, -100%, 1);
+    tween(layer[SansControlBarhelpScreenBg].rotate, -90, 1, easeOutQuad, set(layer[SansControlBarhelpScreenBg].visible,false););
+    tween(layer[SansControlBarhelpScreenBg].x, 100%, 1);
+    SansControlBarupdateHelpButtons();
+  );
+  </action>
+	<action name="SansControlBarHideHelpButtons">
+		set(layer[SansControlBarbtn_display_help].visible, false);
+		set(layer[SansControlBarbtn_close_help].visible, false);
+	</action>
+	<action name="SansControlBarShowHelpButtons">
+		if (layer[SansControlBarhelpScreenFg].displayed,
+			set(layer[SansControlBarbtn_close_help].visible, true);
+			set(layer[SansControlBarbtn_display_help].visible, false);
+		,
+			set(layer[SansControlBarbtn_display_help].visible, true);
+			set(layer[SansControlBarbtn_close_help].visible, false);
+		);
+	</action>
+	<action name="SansControlBarupdateHelpButtons">
+	if (device.desktop,
+		if (SansControlBarIsOpened,
+			SansControlBarShowHelpButtons();
+		,
+			SansControlBarHideHelpButtons();
+		);
+	,
+		SansControlBarHideHelpButtons();
+	);
+	</action>
+
+
+
+
+  <events name="SansControlBarmenufullscreenchangeevent"
+          onenterfullscreen="SansControlBarupdateFullscreenButtons();"
+          onexitfullscreen="SansControlBarupdateFullscreenButtons();"
+          keep="true"/>
+	<action name="SansControlBarHideFullscreenButtons">
+		set(layer[SansControlBarbtn_openfs].visible , false);
+		set(layer[SansControlBarbtn_closefs].visible, false);
+	</action>
+	<action name="SansControlBarShowFullscreenButtons">
+		if (device.fullscreensupport,
+			if(tour_fullscreen,
+				set(layer[SansControlBarbtn_openfs].visible , false);
+				set(layer[SansControlBarbtn_closefs].visible, true);
+			,
+				set(layer[SansControlBarbtn_openfs].visible ,true);
+				set(layer[SansControlBarbtn_closefs].visible,false);
+			);
+		,
+			SansControlBarHideFullscreenButtons();
+		);
+	</action>
+	<action name="SansControlBarupdateFullscreenButtons">
+		if (SansControlBarIsOpened,
+			SansControlBarShowFullscreenButtons();
+		,
+			SansControlBarHideFullscreenButtons();
+		);
+	</action>
+
+	<events name="SansControlBarAutorotationEvents"
+		onstartautorotation="SansControlBarupdateAutorotationButtons();"
+		onresumeautorotation="SansControlBarupdateAutorotationButtons();"
+		onstopautorotation="SansControlBarupdateAutorotationButtons();"
+		onpauseautorotation="SansControlBarupdateAutorotationButtons();"
+		keep="true"/>
+	<action name="SansControlBarHideAutorotationButtons">
+		set(layer[SansControlBarbtn_autorotate_off].visible, false);
+		set(layer[SansControlBarbtn_autorotate_on].visible , false);
+	</action>
+	<action name="SansControlBarShowAutorotationButtons">
+		if(autorotate.enabled == false,
+			set(layer[SansControlBarbtn_autorotate_off].visible, false);
+			set(layer[SansControlBarbtn_autorotate_on].visible , true);
+		,
+			set(layer[SansControlBarbtn_autorotate_off].visible, true);
+			set(layer[SansControlBarbtn_autorotate_on].visible , false);
+		);
+	</action>
+	<action name="SansControlBarupdateAutorotationButtons">
+		if (SansControlBarIsOpened,
+			SansControlBarShowAutorotationButtons();
+		,
+			SansControlBarHideAutorotationButtons();
+		);
+	</action>
+
+
+
+<layer name="SansControlBarmenuTooltipStyle"
+	keep="true"
+	enabled="false"
+	capture="false"
+	url="%FIRSTXML%/graphics/textfield.swf"
+	align="center"
+	background="false"
+	border="false"
+	css="color:#000000;font-family:Helvetica;font-weight:bold;font-size:14px;text-align:left;"
+	height="20"
+	autoheight="true"
+	autowidth="auto"
+	xoffset="0"
+	yoffset="0"
+	padding="2"
+	selectable="false"
+	zorder="0"
+	visible="false"
+	html=""
+	edge="right"
+/>
+  <action name="SansControlBarbuildMenu">
+    
+    set(SansControlBarbutton_pos, 0);
+
+	set(SansControlBarbackgroundwidthwhenclosed, 40);
+    set(layer[SansControlBarbtn_hidecontrols].y, get(SansControlBarbutton_pos));
+    set(layer[SansControlBarbtn_showcontrols].y, get(SansControlBarbutton_pos));
+    inc(SansControlBarbutton_pos, 45);
+
+
+
+      if (device.desktop,
+        set(layer[SansControlBarbtn_display_help].y, get(SansControlBarbutton_pos));
+        set(layer[SansControlBarbtn_close_help].y  , get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+      if (device.fullscreensupport,
+        set(layer[SansControlBarbtn_openfs].y , get(SansControlBarbutton_pos));
+        set(layer[SansControlBarbtn_closefs].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+
+
+      set(layer[SansControlBarbtn_autorotate_on].y , get(SansControlBarbutton_pos));
+      set(layer[SansControlBarbtn_autorotate_off].y, get(SansControlBarbutton_pos));
+      inc(SansControlBarbutton_pos, 45);
+
+
+
+    if (device.desktop,
+      set(layer[SansControlBarbtn_ctrlmode_drag_to].y, get(SansControlBarbutton_pos));
+      set(layer[SansControlBarbtn_ctrlmode_move_to].y, get(SansControlBarbutton_pos));
+      inc(SansControlBarbutton_pos, 45);
+    );
+
+
+
+
+
+      if (device.desktop,
+        set(layer[SansControlBarbtn_right].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+        set(layer[SansControlBarbtn_left].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+      if (device.desktop,
+        set(layer[SansControlBarbtn_down].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+        set(layer[SansControlBarbtn_up].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+      if (device.desktop,
+        set(layer[SansControlBarbtn_out].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+        set(layer[SansControlBarbtn_in].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+    if (scene.count GT 1,
+        set(layer[SansControlBarbtn_next_pano].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+        set(layer[SansControlBarbtn_prev_pano].y, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+
+
+      dec(SansControlBarbutton_pos, 5);
+
+      set(SansControlBarbackgroundwidthwhenopened, get(SansControlBarbutton_pos));
+
+
+    
+      set(layer[SansControlBar_menu_bg].height, get(SansControlBarbackgroundwidthwhenopened));
+	
+	
+	
+    </action>
+
+	<events name="SansControlBarStartTourEvents" onTourStart="SansControlBarCallOnStartTour();" keep="true" />
+	
+	<action name="SansControlBarCallOnStartTour">
+		
+		SansControlBarshowMenuControls();
+	</action>
+
+
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
+
+<action name="viewControlZoomIn">
+	if(%1,
+		if(%2,
+			if(%2 LT view.fovmin,
+				zoomto(get(view.fovmin));
+			,
+				if(%2 LT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, -1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, -1);
+	);
+</action>
+<action name="viewControlZoomOut">
+	if(%1,
+		if(%2,
+			if(%2 GT view.fovmax,
+				zoomto(get(view.fovmax));
+			,
+				if(%2 GT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, +1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, +1);
+	);
+</action>
+<action name="viewControlZoomStop">
+	set(fov_moveforce, 0);
+</action>
+
+  <action name="displayImage">
+    if (layer[displayedStandardImage],
+      if(layer[displayedStandardImage].doNotDeleteMe,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, false);
+        
+        if (%1 == layer[displayedStandardImage].url,
+          applyDisplayedImageObjectAnimation(%8);
+        ,
+          setDisplayedImageObjectParameters(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10);
+        );
+      ,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, true);
+        events.dispatch(onremovedisplayedobject);
+        delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      );
+    ,
+      if(%10,
+        addlayer(displayedStandardImageOverlay);
+        set(layer[displayedStandardImageOverlay].keep, false);
+        set(layer[displayedStandardImageOverlay].width, 100%);
+        set(layer[displayedStandardImageOverlay].height, 100%);
+        set(layer[displayedStandardImageOverlay].type, container);
+        set(layer[displayedStandardImageOverlay].zorder, 98);
+        set(layer[displayedStandardImageOverlay].visible, false);
+        set(layer[displayedStandardImageOverlay].onclick, applyDisplayedImageObjectAnimation(%8););
+        set(layer[displayedStandardImageOverlay].bgcolor, "0x%11");
+        set(layer[displayedStandardImageOverlay].bgalpha, %12);
+        set(layer[displayedStandardImageOverlay].bgcapture, true);
+      );
+      addlayer(displayedStandardImage);
+      set(layer[displayedStandardImage].keep, false);
+      set(layer[displayedStandardImage].onclick, applyDisplayedImageObjectAnimation(%8););
+      set(layer[displayedStandardImage].zorder , 99);
+      set(layer[displayedStandardImage].currentCall, true);
+      set(layer[displayedStandardImage].doNotDeleteMe, true);
+      set(layer[displayedStandardImage].onloaded, resizeDisplayedImageObject());
+      events.dispatch(onremovedisplayedobject);
+      delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      set(layer[displayedStandardImage].visible, false);
+    );
+  </action>
+  <action name="applyDisplayedImageObjectAnimation">resumeautorotation(forcehotspot);
+
+    if (%1,
+      stoptween(layer[displayedStandardImage].width, layer[displayedStandardImage].height);
+      tween(layer[displayedStandardImage].width|layer[displayedStandardImage].height, 1|1, 1, easeOutQuad, WAIT);
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    ,
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    );
+  </action>
+  <action name="setDisplayedImageObjectParameters">
+    set(layer[displayedStandardImage].url       , %1);
+    set(layer[displayedStandardImage].align     , %2);
+    set(layer[displayedStandardImage].x         , %3);
+    set(layer[displayedStandardImage].y         , %4);
+    set(layer[displayedStandardImage].imgwidth  , %5);
+    set(layer[displayedStandardImage].imgheight , %6);
+    set(layer[displayedStandardImage].animated  , %8);
+    set(layer[displayedStandardImage].applyratio, %9);
+    set(layer[displayedStandardImage].overlay   , %10);
+    if (%7,pauseautorotation(forcehotspot);
+);
+  </action>
+  <action name="resizeDisplayedImageObject">
+    if(layer[displayedStandardImage].url,
+    set(layer[displayedStandardImage].fullwidth, get(layer[displayedStandardImage].width));
+    set(layer[displayedStandardImage].fullheight, get(layer[displayedStandardImage].height));
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].width , 1);
+      set(layer[displayedStandardImage].height, 1);
+    );
+    if(layer[displayedStandardImage].imgwidth != "" AND layer[displayedStandardImage].imgheight != "",
+      if(layer[displayedStandardImage].imgwidth == "prop",
+        set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+        indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+        if(tempDisplayedImageObjectHeightPercent GT 0,
+          txtreplace(tempDisplayedImageObjectHeight, '%', '');
+          mul(tempDisplayedImageObjectHeight, get(stageheight));
+          div(tempDisplayedImageObjectHeight, 100);
+          Math.round(tempDisplayedImageObjectHeight);
+        );
+        mul(flyingImgWidth,get(layer[displayedStandardImage].fullwidth),get(tempDisplayedImageObjectHeight));
+        div(flyingImgWidth,get(layer[displayedStandardImage].fullheight));
+        Math.round(flyingImgWidth);
+        set(layer[displayedStandardImage].imgwidth , get(flyingImgWidth));
+        set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+      ,
+        if(layer[displayedStandardImage].imgheight == "prop",
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          mul(flyingImgHeight,get(layer[displayedStandardImage].fullheight),get(tempDisplayedImageObjectWidth));
+          div(flyingImgHeight,get(layer[displayedStandardImage].fullwidth));
+          Math.round(flyingImgHeight);
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight , get(flyingImgHeight));
+        ,
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          if(tempDisplayedImageObjectHeightPercent GT 0,
+            txtreplace(tempDisplayedImageObjectHeight, '%', '');
+            mul(tempDisplayedImageObjectHeight, get(stageheight));
+            div(tempDisplayedImageObjectHeight, 100);
+            Math.round(tempDisplayedImageObjectHeight);
+          );
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+        );
+      );
+    ,
+      set(layer[displayedStandardImage].imgwidth , get(layer[displayedStandardImage].fullwidth));
+      set(layer[displayedStandardImage].imgheight, get(layer[displayedStandardImage].fullheight));
+    );
+    
+    set(resizedwidth, get(layer[displayedStandardImage].imgwidth));
+    set(resizedheight, get(layer[displayedStandardImage].imgheight));
+    if(layer[displayedStandardImage].applyratio,
+      sub(resizedstagewidth, get(stagewidth), get(layer[displayedStandardImage].x));
+      sub(resizedstageheight, get(stageheight), get(layer[displayedStandardImage].y));
+      Math.abs(resizedstagewidth);
+      Math.abs(resizedstageheight);
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+      );
+    );
+    
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].animated, false);
+      tween(layer[displayedStandardImage].width , get(resizedwidth), 1, easeOutQuad);
+      tween(layer[displayedStandardImage].height, get(resizedheight), 1, easeOutQuad);
+    ,
+      set(layer[displayedStandardImage].width , get(resizedwidth));
+      set(layer[displayedStandardImage].height, get(resizedheight));
+    );
+    if(layer[displayedStandardImage].overlay,set(layer[displayedStandardImageOverlay].visible, true););
+    set(layer[displayedStandardImage].visible, true);
+    ,
+      delayedcall(0.2,resizeDisplayedImageObject(););
+    );
+  </action>
+  <events name="displayedImageObjectEvents" keep="true" onremovedisplayedobject="displayedImageObjectOnRemoveDisplayedObject" onresize="if(layer[displayedStandardImage],resizeDisplayedImageObject());" />
+  <action name="displayedImageObjectOnRemoveDisplayedObject">
+    ifnot(layer[displayedStandardImage].currentCall,if(layer[displayedStandardImage].visible,resumeautorotation(forcehotspot);
+
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););
+      removelayer(displayedStandardImage);
+    ););
+  </action>
+
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+<action name="viewControlMoveUp">
+	if(%1,
+		if(%2,
+			set(isfullvertical, false);
+			ifnot(scene[get(xml.scene)].planar,
+				sub(viewvfov, panoview.vmax, panoview.vmin);
+				if (viewvfov == 180,
+					set(isfullvertical, true);
+				);
+			);
+			if(isfullvertical == false AND calc(view.vlookat-%2) LT view.vlookatmin,
+				moveto(get(view.hlookat), get(view.vlookatmin));
+			,
+				moveto(get(view.hlookat), calc(view.vlookat-%2));
+			);
+		,
+			set(vlookat_moveforce, -1);
+			delayedcall(0.1, viewControlMoveVertStop());
+		);
+	,
+		set(vlookat_moveforce, -1);
+	);
+</action>
+<action name="viewControlMoveDown">
+	if(%1,
+		if(%2,
+			set(isfullvertical, false);
+			ifnot(scene[get(xml.scene)].planar,
+				sub(viewvfov, panoview.vmax, panoview.vmin);
+				if (viewvfov == 180,
+					set(isfullvertical, true);
+				);
+			);
+			if(sceneisfull360 == false AND calc(view.vlookat+%2) GT view.vlookatmax,
+				moveto(get(view.hlookat), get(view.vlookatmax));
+			,
+				moveto(get(view.hlookat), calc(view.vlookat+%2));
+			);
+		,
+			set(vlookat_moveforce, +1);
+			delayedcall(0.1, viewControlMoveVertStop());
+		);
+	,
+		set(vlookat_moveforce, +1);
+	);
+</action>
+<action name="viewControlMoveLeft">
+	if(%1,
+		if(%2,
+			set(isfullhorizontal, false);
+			ifnot(scene[get(xml.scene)].planar,
+				sub(viewhfov, panoview.hmax, panoview.hmin);
+				if (viewhfov == 360,
+					set(isfullhorizontal, true);
+				);
+			);
+			if(isfullhorizontal == false AND calc(view.hlookat-%2) LT view.hlookatmin,
+				moveto(get(view.hlookatmin), get(view.vlookat));
+			,
+				moveto(calc(view.hlookat-%2), get(view.vlookat));
+			);
+		,
+			set(hlookat_moveforce, -1);
+			delayedcall(0.1, viewControlMoveHoriStop());
+		);
+	,
+		set(hlookat_moveforce, -1);
+	);
+</action>
+<action name="viewControlMoveRight">
+	if(%1,
+		if(%2,
+			set(isfullhorizontal, false);
+			ifnot(scene[get(xml.scene)].planar,
+				sub(viewhfov, panoview.hmax, panoview.hmin);
+				if (viewhfov == 360,
+					set(isfullhorizontal, true);
+				);
+			);
+			if(isfullhorizontal == false AND calc(view.hlookat+%2) GT view.hlookatmax,
+				moveto(get(view.hlookatmax), get(view.vlookat));
+			,
+				moveto(calc(view.hlookat+%2), get(view.vlookat));
+			);
+		,
+			set(hlookat_moveforce, +1);
+			delayedcall(0.1, viewControlMoveHoriStop());
+			
+		);
+	,
+		set(hlookat_moveforce, +1);
+	);
+</action>
+<action name="viewControlMoveHoriStop">
+	set(hlookat_moveforce, 0);
+</action>
+<action name="viewControlMoveVertStop">
+	set(vlookat_moveforce, 0);
+</action>
+
+  <!-- Sounds Management -->
+  <plugin name="soundinterface"
+          preload="true"
+          url.flash="%SWFPATH%/graphics/soundinterface.swf"
+          url.html5="%FIRSTXML%/graphics/soundinterface.js"
+          rootpath="%$videos_sounds_path%/sounds"
+          backgroundsound=""
+          backgroundsoundloops="0"
+          bgsound="false"
+          bgsoundpaused="false"
+          bgsoundloopended="false"
+          bgsoundtoforce = "false"
+          volumeinitialized="false"
+          started="true"
+          keep="true"/>
+  <events name="soundmanagementevents"
+          onnewpano="if(plugin[soundinterface].started,playbackgroundsound(););"
+          onxmlcomplete="soundinterfaceonxmlcomplete();"
+          keep="true"/>
+  <action name="soundinterfaceonxmlcomplete">
+    ifnot(plugin[soundinterface].volumeinitialized,
+      div(plugin[soundinterface].volume, tour_soundsvolume, 100);
+      set(plugin[soundinterface].volumeinitialized,true);
+    );
+  </action>
+  <action name="playsound3Dwhenpossible">
+    set(really_play_sound, true);
+    if (tour_current_played_sound,
+      if (%1 == tour_current_played_sound,
+        delete(tour_current_played_sound);
+        set(tour_current_played_sound_state, 0);
+        delete(tour_current_played_sound_paused);
+        stopsound(%1);
+        set(really_play_sound, false);
+        if(%4,
+          delete(tour_current_played_sound_pausesound);
+          resumeTourSoundsActions(true,true,true,true,true);
+        );
+      );
+    );
+    if (really_play_sound,
+      if (tour_current_played_sound,
+        stopsound(get(tour_current_played_sound));
+
+        ifnot(%4,
+          if(tour_current_played_sound_pausesound,
+            delete(tour_current_played_sound_pausesound);
+            resumeTourSoundsActions(true,true,true,true,true);
+          );
+        );
+      );
+      if(%4,
+        set(tour_current_played_sound_pausesound, true);
+        pauseTourSoundsActions(true,false,true,true,true);
+      );
+      set(tour_current_played_sound, %1);
+      if(tour_current_played_video,
+        set(tour_current_played_sound_state, 2);
+      ,
+        set(tour_current_played_sound_state, 1);
+      );
+      set(tour_current_played_sound_paused, false);
+      if (%3,
+        if (device.flash,
+          div(volume, tour_soundsvolume, 100);
+          if(%9 != null,
+            playsound3D(%1,%2,%5,%6,%7,get(volume),%8,stopsound3Dwhenpossible(%1,%4));
+          ,
+            playsound3D(%1,%2,%5,%6,%7,get(volume),%8);
+          );
+        ,
+          if(%9 != null,
+            playsound(%1,%2,%8,stopsound3Dwhenpossible(%1,%4));
+          ,
+            playsound(%1,%2,%8);
+          );
+        );
+      ,
+        if(%6 != null,
+          playsound(%1,%2,%5,stopsound3Dwhenpossible(%1,%4));
+        ,
+          playsound(%1,%2,%5);
+        );
+      );
+
+      ifnot(tour_soundson,
+        set(tour_current_played_sound_paused, true);
+        pausesound(%1);
+      );
+    );
+  </action>
+  <action name="stopsound3Dwhenpossible">
+    if (%1 == tour_current_played_sound,
+      delete(tour_current_played_sound);
+      set(tour_current_played_sound_state, 0);
+      delete(tour_current_played_sound_paused);
+
+      ifnot(device.safari,
+        stopsound(%1);
+      );
+      if(%2,
+        delete(tour_current_played_sound_pausesound);
+        resumeTourSoundsActions(true,true,true,true,true);
+      );
+    );
+  </action>
+  <action name="playbackgroundsound">
+  if(playsound,
+    if (xml.scene,
+      if (scene[get(xml.scene)].backgroundsound,
+        if (plugin[soundinterface].backgroundsound != scene[get(xml.scene)].backgroundsound,
+          copy(plugin[soundinterface].backgroundsound, scene[get(xml.scene)].backgroundsound);
+          copy(plugin[soundinterface].backgroundsoundloops, scene[get(xml.scene)].backgroundsoundloops);
+          if (tour_soundson,
+            set(plugin[soundinterface].bgsound, true);
+            set(plugin[soundinterface].bgsoundpaused, false);
+            set(plugin[soundinterface].bgsoundloopended, false);
+            set(plugin[soundinterface].bgsoundtoforce, false);
+            if(scene[get(xml.scene)].video == false OR (scene[get(xml.scene)].video == true AND scene[get(xml.scene)].scenevideomute == true),
+              if(plugin[soundinterface].backgroundsoundloops GT 0,
+                playsound(bgsoundname, get(plugin[soundinterface].backgroundsound), get(plugin[soundinterface].backgroundsoundloops), stopbackgroundsoundoncomplete());
+              ,
+                playsound(bgsoundname, get(plugin[soundinterface].backgroundsound), get(plugin[soundinterface].backgroundsoundloops));
+              );
+            );
+           ,
+            set(plugin[soundinterface].bgsoundtoforce, true);
+            set(plugin[soundinterface].bgsound, false);
+          );
+        ,
+          if (tour_soundson,
+            if((plugin[soundinterface].bgsoundpaused == true AND scene[get(xml.scene)].video == false) OR (scene[get(xml.scene)].video == true AND scene[get(xml.scene)].scenevideomute == true),
+              resumesound(bgsoundname);
+              set(plugin[soundinterface].bgsoundpaused, false);
+            );
+          ,
+            set(plugin[soundinterface].bgsoundtoforce, true);
+            set(plugin[soundinterface].bgsound, false);
+          );
+        );
+      );
+    );
+  ,
+    delayedcall(0.2, playbackgroundsound());
+  );
+  </action>
+  <action name="stopbackgroundsoundoncomplete">
+    if (plugin[soundinterface].backgroundsound,
+    if (plugin[soundinterface].backgroundsoundloops GT 0,
+
+      set(plugin[soundinterface].backgroundsoundloops, 0);
+      set(plugin[soundinterface].bgsound, false);
+      set(plugin[soundinterface].bgsoundpaused, false);
+      set(plugin[soundinterface].bgsoundloopended, true);
+    );
+    );
+  </action>
+  <action name="resetbackgroundsoundifneeded">
+    if (xml.scene,
+      if (scene[get(xml.scene)].backgroundsound != scene[%1].backgroundsound,
+        if(plugin[soundinterface].backgroundsound,
+          stopsound(bgsoundname);
+        );
+        set(plugin[soundinterface].backgroundsound, "");
+        set(plugin[soundinterface].backgroundsoundloops, 0);
+        set(plugin[soundinterface].bgsound, false);
+        set(plugin[soundinterface].bgsoundpaused, false);
+        set(plugin[soundinterface].bgsoundloopended, false);
+      );
+    );
+  </action>
+  <action name="pausebackgroundsound">
+    if(plugin[soundinterface].backgroundsound,
+      if (plugin[soundinterface].bgsound,
+        if(plugin[soundinterface].bgsoundpaused == false AND plugin[soundinterface].bgsoundloopended == false,
+          pausesound(bgsoundname);
+          set(plugin[soundinterface].bgsoundpaused, true);
+        );
+      );
+    );
+    
+  </action>
+  <action name="resumebackgroundsound">
+    set(bgSoundOnResume, true);
+    set(forceBgSoundOnResume, true);
+    if(layer[displayedStandardVideo],
+    if(layer[displayedStandardVideo].pausebgsound AND tour_current_played_video,
+      set(bgSoundOnResume, false);
+      set(forceBgSoundOnResume, false);
+    ););
+    if(layer[webvideodisplay_player],
+    if(layer[webvideodisplay_player].pausebgsound AND tour_current_played_web_video,
+      set(bgSoundOnResume, false);
+      set(forceBgSoundOnResume, false);
+    ););
+    if(tour_current_played_sound_pausesound AND tour_current_played_sound,
+      set(bgSoundOnResume, false);
+    );
+    ifnot(plugin[soundinterface].backgroundsound AND scene[get(xml.scene)].backgroundsound,
+      set(bgSoundOnResume, false);
+    );
+    if(videospots_playing GT 0,
+      set(bgSoundOnResume, false);
+      set(forceBgSoundOnResume, false);
+    );
+    if(bgSoundOnResume,
+      if (plugin[soundinterface].backgroundsound,
+        if (tour_soundson,
+          if (plugin[soundinterface].bgsound AND plugin[soundinterface].bgsoundloopended == false,
+            if((plugin[soundinterface].bgsoundpaused == true AND scene[get(xml.scene)].video == false) OR (scene[get(xml.scene)].video == true AND scene[get(xml.scene)].scenevideomute == true),
+              resumesound(bgsoundname);
+              set(plugin[soundinterface].bgsoundpaused, false);
+            ,
+
+              if(device.mobile OR device.tablet OR device.safari OR device.chrome,
+                resumesound(bgsoundname);
+                set(plugin[soundinterface].bgsoundpaused, false);
+              );
+            );
+          ,
+            if(((plugin[soundinterface].bgsoundpaused == true OR plugin[soundinterface].bgsoundtoforce == true) AND scene[get(xml.scene)].video == false) OR (scene[get(xml.scene)].video == true AND scene[get(xml.scene)].scenevideomute == true),
+              set(plugin[soundinterface].bgsound, true);
+              set(plugin[soundinterface].bgsoundpaused, false);
+              set(plugin[soundinterface].bgsoundloopended, false);
+              set(plugin[soundinterface].bgsoundtoforce, false);
+              if(plugin[soundinterface].backgroundsoundloops GT 0,
+                playsound(bgsoundname, get(plugin[soundinterface].backgroundsound), get(plugin[soundinterface].backgroundsoundloops), stopbackgroundsoundoncomplete());
+              ,
+                playsound(bgsoundname, get(plugin[soundinterface].backgroundsound), get(plugin[soundinterface].backgroundsoundloops));
+              );
+            );
+          );
+        );
+      );
+      
+    ,
+      if(forceBgSoundOnResume,
+        playbackgroundsound();
+        
+      );
+    );
+  </action>
+  <action name="preloadSounds">
+    preloadsound("y2mate.is - (no copyright music) lofi type beat “biscuit”  free vlog music  prod. by lukrembo-etz2m2zm3vy-160k-1645442074956.mp3");
+  </action>
+
+  <action name="play3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, playpanolocalsounds();););
+  </action>
+  <action name="stop3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, stoppanolocalsounds();););
+  </action>
+  <action name="resume3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, 
+      set(kill3dSoundOnResume, true);
+      if(layer[displayedStandardVideo],
+      if(layer[displayedStandardVideo].pausebgsound,
+      if(tour_current_played_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(layer[webvideodisplay_player],
+      if(layer[webvideodisplay_player].pausebgsound,
+      if(tour_current_played_web_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(tour_current_played_sound_pausesound,
+      if(tour_current_played_sound,
+        set(kill3dSoundOnResume, false);
+      ););
+      if(kill3dSoundOnResume,
+        resumepanolocalsounds();
+      );
+    ););
+  </action>
+  <action name="pause3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, pausepanolocalsounds();););
+  </action>
+  <action name="set3DLocalSoundsVolume">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, setpanolocalsoundsvolume();););
+  </action>
+  <action name="playTourSounds">
+    set(tour_soundson, true);events.dispatch(playtoursoundsevent);
+    resumeTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="stopTourSounds">
+    set(tour_soundson, false);events.dispatch(stoptoursoundsevent);
+    pauseTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="setTourSoundsVolume">
+    set(tour_soundsvolume, %1);events.dispatch(changetoursoundsevent);
+    div(volume, tour_soundsvolume, 100);
+    set(plugin[soundinterface].volume, get(volume));
+    set3DLocalSoundsVolume();
+  </action>
+  <action name="playTourSoundsActions">
+    if(%1,
+      if(plugin[soundinterface],
+        if(plugin[soundinterface].started,
+        play3DLocalSounds();
+        );
+      );
+    );
+    if(%2,
+      if(plugin[soundinterface],
+        if(plugin[soundinterface].started,
+          resumebackgroundsound();
+        );
+      );
+    );
+  </action>
+  <action name="stopTourSoundsActions">
+    if(%1,
+      stop3DLocalSounds();
+    );
+    if(%2,
+      stopSoundActionsSounds();
+    );
+    if(%3,
+      stopVideoActionsSounds();
+    );
+    if(%4,
+      pausebackgroundsound();
+    );
+  </action>
+  <action name="resumeTourSoundsActions">
+    if(%1,
+      if(plugin[soundinterface],
+        if(plugin[soundinterface].started,
+        resume3DLocalSounds();
+        );
+      );
+    );
+    if(%2,
+      resumeSoundActionsSounds();
+    );
+    if(%3,
+      resumeVideoActionsSounds();
+    );
+    if(%4,
+      if(%5,
+        if(plugin[soundinterface],
+          if(plugin[soundinterface].started,
+            resumebackgroundsound();
+          );
+        );
+      ,
+        pausebackgroundsound();
+      );
+    );
+  </action>
+  <action name="pauseTourSoundsActions">
+    if(%1,
+      pause3DLocalSounds();
+    );
+    if(%2,
+      pauseSoundActionsSounds();
+    );
+    if(%3,
+      pauseVideoActionsSounds();
+    );
+    if(%4,
+      if(%5,
+        pausebackgroundsound();
+      ,
+        if(plugin[soundinterface],
+          if(plugin[soundinterface].started,
+            resumebackgroundsound();
+          );
+        );
+      );
+    );
+  </action>
+  <action name="stopSoundActionsSounds">
+    if (tour_current_played_sound,
+      delete(tour_current_played_sound_paused);
+      stopsound(get(tour_current_played_sound));
+      delete(tour_current_played_sound);
+      set(tour_current_played_sound_state, 0);
+    );
+  </action>
+  <action name="stopVideoActionsSounds">
+    if(tour_current_played_video,
+      if(layer[displayedStandardVideo],
+        layer[displayedStandardVideo].stop();
+        removelayer(displayedStandardVideo);
+        if(layer[displayedStandardVideoOverlayButton], removelayer(displayedStandardVideoOverlayButton); );
+        if(layer[displayedStandardVideoOverlay], removelayer(displayedStandardVideoOverlay); );
+        delete(tour_current_played_video);
+        set(tour_current_played_video_state, 0);
+      );
+    );
+    if(tour_current_played_web_video,
+      displayWebVideoObjectClose();
+    );
+  </action>
+  <action name="resumeSoundActionsSounds">
+    if (tour_current_played_sound,
+      set(resumeSoundActionsVerification, true);
+      if(tour_current_played_video,
+        if(tour_current_played_sound_state LT tour_current_played_video_state,
+          set(resumeSoundActionsVerification, false);
+        );
+      );
+      if(resumeSoundActionsVerification,
+        if (tour_soundson,
+          if(tour_current_played_sound_paused,
+            set(tour_current_played_sound_paused, false);
+            resumesound(get(tour_current_played_sound));
+          ,
+
+            if(device.mobile OR device.tablet OR device.safari OR device.chrome,
+              set(tour_current_played_sound_paused, false);
+              resumesound(get(tour_current_played_sound));
+            );
+          );
+        );
+      );
+    );
+  </action>
+  <action name="resumeVideoActionsSounds">
+    if(tour_current_played_video,
+      set(resumeVideoActionsVerification, true);
+      if(tour_current_played_sound,
+        if(tour_current_played_video_state LT tour_current_played_sound_state,
+          set(resumeVideoActionsVerification, false);
+        );
+      );
+      if(resumeVideoActionsVerification,
+        if (tour_soundson,
+          if(device.flash OR (device.webgl AND !device.ios),
+            div(volume, tour_soundsvolume, 100);
+            set(layer[displayedStandardVideo].volume, get(volume));
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.startVideosSounds(get(volume)));
+            ,
+              if(tour_soundsvolume GT 0,
+                set(layer[displayedStandardVideo].muted, false);
+              ,
+                set(layer[displayedStandardVideo].muted, true);
+              );
+            );
+          );
+        ,
+          if(device.flash OR (device.webgl AND !device.ios),
+            set(layer[displayedStandardVideo].volume, 0);
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.stopVideosSounds());
+            ,
+              set(layer[displayedStandardVideo].muted, true);
+            );
+          );
+        );
+      );
+    );
+  </action>
+  <action name="pauseSoundActionsSounds">
+    if (tour_current_played_sound,
+      ifnot(tour_current_played_sound_paused,
+        set(tour_current_played_sound_paused, true);
+        pausesound(get(tour_current_played_sound));
+      );
+    );
+  </action>
+  <action name="pauseVideoActionsSounds">
+    if(tour_current_played_video,
+      if(device.flash OR (device.webgl AND !device.ios),
+        set(layer[displayedStandardVideo].volume, 0);
+      ,
+        ifnot(device.ios,
+          js(kpanotour.Sounds.stopVideosSounds());
+        ,
+          set(layer[displayedStandardVideo].muted, true);
+        );
+      );
+    );
+  </action>
+
+</krpano>
